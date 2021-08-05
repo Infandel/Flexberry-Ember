@@ -1,0 +1,16 @@
+{
+  "name": "task1",
+  "version": "1.0.0",
+  "description": "Task 1 solution with json-server db requests",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Infandel",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "json-server": "^0.16.3"
+  }
+}
