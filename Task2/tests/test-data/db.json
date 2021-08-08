@@ -1,0 +1,22 @@
+{
+  "speakers": [
+    {
+      "id": 1,
+      "name": "Robert",
+      "surname": "Martin",
+      "patronymic": "Dmitrievich"
+    },
+    {
+      "id": 2,
+      "name": "C.S",
+      "surname": "Lewis",
+      "patronymic": "Petrovich"
+    },
+    {
+      "id": 3,
+      "name": "Edgar",
+      "surname": "Por",
+      "patronymic": "Pavlovich"
+    }
+  ]
+}
