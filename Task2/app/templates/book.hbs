@@ -4,27 +4,27 @@
 			<div class="form-row navbar-panel justify-content-between">
 				<div class="col-md-auto">
 					<div class="form-group row">
-						{{input type="text" value=search class="form-control mr-2 search-long search-only" placeholder="Поиск по ФИО"}}
-            {{#link-to "speaker.create" class="btn btn-outline-primary my-2"}}
-						  Добавить Спикера
+						{{input type="text" value=search class="form-control mr-2 search-long search-only" placeholder="Поиск по названию книги, автору и тэгам"}}
+            {{#link-to "book.create" class="btn btn-outline-primary my-2"}}
+						  Добавить Книгу
 					  {{/link-to}}
 					</div>          
 				</div>
 			</div>
 
-      <h2 class="text-center">Спикеры</h2>
+      <h2 class="text-center">Книги</h2>
       {{#if isLoading}}
         <div class="container h-100">
           <img src="images/loading.gif" alt="Loading">
         </div>
       {{else}}
         <div class="row row-cols-1 row-cols-md-3">
-          {{#each model as |speaker|}}
+          {{#each model as |book|}}
           <div class="col mb-4">
               <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">
-                      {{speaker-item speakerId=speaker.id name=speaker.name surname=speaker.surname patronymic=speaker.patronymic}}
+                      {{book-item bookId=book.id title=book.title author=book.author tags=book.tags}}
                     </h5>
                 </div>						
               </div>
@@ -34,5 +34,3 @@
       {{/if}}
 		</div>
 </div>
-
-  

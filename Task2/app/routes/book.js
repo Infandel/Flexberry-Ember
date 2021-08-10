@@ -14,16 +14,16 @@ export default Route.extend({
     let promise = new Promise((resolve, reject) => {
       later(async () => {
         try {
-          let speakers = search ? await this.get("dataService").getSpeakers(search) : await this.get("dataService").getSpeakers();
-          resolve(speakers);
+          let books = search ? await this.get("dataService").getBooks(search) : await this.get("dataService").getBooks();
+          resolve(books);
         }
         catch (e) {
           reject('Connection failed');
         }
       }, 1000);
     }).
-    then((speakers) => {
-      this.set('controller.model', speakers);
+    then((books) => {
+      this.set('controller.model', books);
     }).
     finally(() => {
       if (promise === this.get('modelPromise')) {
@@ -43,7 +43,7 @@ export default Route.extend({
   },
   
   actions: {
-    refreshSpeakers() {
+    refreshBooks() {
       this.refresh();
     },
     loading() {

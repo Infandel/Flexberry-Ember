@@ -4,11 +4,11 @@ import { inject as service } from '@ember/service';
 export default Controller.extend({
   dataService: service('data'),
   actions: {
-    async saveSpeaker(speaker) {
+    async saveBook(book) {
       try {
-        await this.get("dataService").updateSpeaker(speaker);
-
-        this.transitionToRoute('speaker.index');
+        await this.get("dataService").updateBook(book);
+        console.log(book)
+        this.transitionToRoute('book.index');
       }
       
       catch (e) {

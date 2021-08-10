@@ -1,0 +1,9 @@
+{{#link-to "book.detail" bookId}}
+  <p>Название: {{title}}</p>
+  <p>Автор: {{author}}</p>
+  <p>Тэги: 
+    {{#each tags as |tag|}}
+      #{{tag}}
+    {{/each}}
+  </p>
+{{/link-to}}

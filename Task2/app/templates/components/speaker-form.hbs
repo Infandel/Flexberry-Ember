@@ -1,35 +1,33 @@
-<BsModalSimple
-  open={{true}}
-  title="Добавить Спикера"
-  closeTitle="Cancel"
-  submitTitle="Save"
-  size="lg"
-  closeButton={{false}}
-  fade={{true}}
-  backdrop={{true}}
-  backdropClose={{true}}
-  {{!-- onSubmit={{action "submit"}} --}}
-  {{!-- onHidden={{action "close"}} --}}
-  renderInPlace={{true}}>
-  <h2 class="text-center">Редактирование спикера: Имя Фамилия</h2>
-    <form class="edit-form">
-      <div class="form-group row">
-        <label for="inputSurname" class="col-sm-2 col-form-label">Фамилия:</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control form-control-lg" id="inputSurname" placeholder="Введите фамилию">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="inputName" class="col-sm-2 col-form-label">Имя:</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Введите имя">
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="inputPatronymic" class="col-sm-2 col-form-label big">Отчество:</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control form-control-lg" id="inputPatronymic" placeholder="Введите отчество">
-        </div>
-      </div>
-    </form>
-</BsModalSimple>
+<form onsubmit={{action "submitForm"}} class="edit-form">
+
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Имя:</label>
+    <div class="col-sm-10">
+      {{input type="text" value=name class="form-control form-control-lg" placeholder="Введите имя"}}
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Фамилия:</label>
+    <div class="col-sm-10">
+      {{input type="text" value=surname class="form-control form-control-lg" placeholder="Введите фамилию"}}
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label big">Отчество:</label>
+    <div class="col-sm-10">
+      {{input type="text" value=patronymic class="form-control form-control-lg" id="inputPatronymic" placeholder="Введите отчество"}}
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-6">
+      <button type="submit" class="btn btn-outline-primary btn-lg">Сохранить</button>
+    </div>
+    <div class="col-6 text-right">
+      {{#link-to "speaker.index" class="btn btn-outline-secondary btn-lg" }}Отмена{{/link-to}}
+    </div>
+	</div>
+  
+</form>

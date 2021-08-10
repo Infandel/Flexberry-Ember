@@ -1,22 +1,122 @@
 {
   "speakers": [
     {
-      "id": 1,
-      "name": "Robert",
-      "surname": "Martin",
-      "patronymic": "Dmitrievich"
-    },
-    {
-      "id": 2,
-      "name": "C.S",
-      "surname": "Lewis",
-      "patronymic": "Petrovich"
-    },
-    {
       "id": 3,
       "name": "Edgar",
       "surname": "Por",
       "patronymic": "Pavlovich"
+    },
+    {
+      "name": "Ophelia",
+      "surname": "Wanderbook",
+      "patronymic": "Olgovna",
+      "id": 6
+    },
+    {
+      "name": "Joe",
+      "surname": "Black",
+      "patronymic": "White",
+      "id": 7
+    }
+  ],
+  "books": [
+    {
+      "title": "Brave New World",
+      "author": "Oldos Haskly",
+      "pagesCount": "360",
+      "descriptionURL": "www.neverbe.com",
+      "tags": [
+        "future",
+        "here"
+      ],
+      "id": 2,
+      "coverURL": "http://www.googleexmaple.com"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "pagesCount": "300",
+      "coverURL": "http://www.googleexmaple.com",
+      "descriptionURL": "www.thisawesomebook.com",
+      "tags": [
+        "#future",
+        " #communism"
+      ],
+      "id": 3,
+      "descriURL": "http://www.dummy.com"
+    },
+    {
+      "title": "360 degrees on fahrenheit",
+      "author": "Rey Bradberry",
+      "pagesCount": "250",
+      "coverURL": "http://www.googleexmaple.com",
+      "descriptionURL": "www.bradberry.com",
+      "tags": [
+        "future",
+        "awesome"
+      ],
+      "id": 4
+    },
+    {
+      "title": "1000 words per day",
+      "author": "Fluent Boy",
+      "pagesCount": "360",
+      "coverURL": "http://www.googleexmaple.com",
+      "descriptionURL": "www.apperntly.com",
+      "tags": [
+        "fluent",
+        "rapid"
+      ],
+      "id": 5
+    },
+    {
+      "title": "Kevin does",
+      "author": "Kevin Kostner",
+      "pagesCount": "100",
+      "coverURL": "http://www.googleexmaple.com",
+      "descriURL": "www.wrong.com",
+      "tags": [
+        "comedy",
+        "awesome"
+      ],
+      "id": 6
+    },
+    {
+      "title": "Kolen",
+      "author": "Kolen Kinsky",
+      "pagesCount": "150",
+      "coverURL": "http://www.googleexmaple.com",
+      "descriURL": "http://www.googleexmaple.com",
+      "tags": [
+        "comedy",
+        "smart"
+      ],
+      "id": 7
+    },
+    {
+      "title": "Dummy",
+      "author": "Data",
+      "pagesCount": "100",
+      "coverURL": "http://www.googleexmaple.com",
+      "descriURL": "http://www.googleexmaple.com",
+      "tags": [
+        "#awesome",
+        " #input"
+      ],
+      "id": 8
+    },
+    {
+      "title": "Dumb",
+      "author": "DataYea",
+      "pagesCount": "1010",
+      "coverURL": "http://www.googleexmaple.com",
+      "descriURL": "http://www.dummy.com",
+      "tags": [
+        "awesome",
+        "book",
+        "handled"
+      ],
+      "id": 9
     }
   ]
 }

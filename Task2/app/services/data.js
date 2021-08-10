@@ -37,5 +37,42 @@ export default Service.extend({
       },
       body: JSON.stringify(speaker)
     });
+  },
+
+  getBooks(search) {
+    let queryParams = '';
+    if (search) {
+      queryParams=`?q=${search}`;
+    }
+
+    return fetch(`${ENV.backendURL}/books${queryParams}`).then((response) => response.json());
+  },
+
+  getBook(id) {
+    return fetch(`${ENV.backendURL}/books/${id}`).then((response) => response.json());
+  },
+
+  deleteBook(book) {
+    return fetch(`${ENV.backendURL}/books/${book.id}`, { method: 'DELETE'});
+  },
+
+  createBook(book) {
+    return fetch(`${ENV.backendURL}/books`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(book)
+    });
+  },
+
+  updateBook(book) {
+    return fetch(`${ENV.backendURL}/books/${book.id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(book)
+    });
   }
 });

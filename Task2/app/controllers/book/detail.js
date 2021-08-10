@@ -4,15 +4,13 @@ import { inject as service } from '@ember/service';
 export default Controller.extend({
   dataService: service('data'),
   actions: {
-    async saveSpeaker(speaker) {
+    async deleteBook(book) {
       try {
-        await this.get("dataService").updateSpeaker(speaker);
-
-        this.transitionToRoute('speaker.index');
+        await this.get('dataService').deleteBook(book);
+        this.transitionToRoute('book.index');
       }
-      
       catch (e) {
-        this.send('error', new Error('Connection Failed'));
+        this.send('error', new Error('Connection failed'));
       }
     }
   }

@@ -15,10 +15,10 @@
         <a class="nav-link" href="#">Встречи клуба</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Книги</a>
+        {{#link-to "book" class="nav-link"}}Книги{{/link-to}}
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Спикеры</a>
+        {{#link-to "speaker" class="nav-link"}}Спикеры{{/link-to}}
       </li>
       <li class="nav-item">
         <a class="nav-link text-success" href="#">Оставить заявку</a>
@@ -34,9 +34,9 @@
   </ul>
   </div>
 </nav>
-<main class="container h-100">
+<div class="container">
   {{outlet}}
-</main>
+</div>
 <footer class="footer">
   <div class="container">
       <span>&copy; Skyori, 2021</span>

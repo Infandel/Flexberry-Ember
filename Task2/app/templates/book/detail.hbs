@@ -1,0 +1,34 @@
+<div class="col mb-4">
+  <div class="card">
+    <img src="images/book-cover.jpg" width="250" height="250" class="rounded mx-auto d-block" alt="Фото спикера">
+  <div class="card-body">
+    <h3 class="card-title text-center">
+      Книга: {{model.title}}       
+    </h3>
+    <h6 class="card-subtitle mb-2 text-left">
+      <p>Автор: {{model.author}}</p>
+      <p>Количество страниц: {{model.pagesCount}}</p>
+      <p>Ссылка на обложку: {{model.coverURL}}</p>
+      <p>Ссылка на описание: {{model.descriURL}}</p>
+    </h6>
+  </div>
+  <div class="card-footer">
+    {{!-- <div class="row"> --}}
+      <div class="text-left">
+        {{#link-to "book.index" class="btn btn-outline-primary"}}
+          Вернуться
+        {{/link-to}}
+      </div>
+      <div class="text-right">
+        {{#link-to "book.edit" model.id class="btn btn-outline-primary"}}
+          Редактировать
+        {{/link-to}}
+        <button type="button" onclick={{ action "deleteBook" model }} class="btn btn-outline-danger" >
+          Удалить 
+        </button>
+      </div>
+    {{!-- </div> --}}
+  </div>
+  </div>
+</div>
+{{outlet}}
