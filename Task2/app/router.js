@@ -19,6 +19,12 @@ Router.map(function() {
     this.route('create');
     this.route('edit', { path: "/:id/edit" });
   });
+  this.route('club-meeting', { path: '/club-meetings' });
+  this.route('report', { path: "/reports"}, function() {
+    this.route('detail', { path: "/:id"});
+    this.route('create');
+    this.route('edit', { path: "/:id/edit" });
+  });
 });
 
 export default Router;

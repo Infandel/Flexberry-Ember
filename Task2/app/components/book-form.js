@@ -5,19 +5,15 @@ export default Component.extend({
     submitForm(e){
       e.preventDefault();
       this.onsubmit({
-          id: this.get('bookId'),
-          title: this.get('title'),
-          author: this.get('author'),
-          pagesCount: this.get('pagesCount'),
-          coverURL: this.get('coverURL'),
-          descriURL: this.get('descriURL'),
-          tags: this.get('tags').toString().split(','),
+        id: this.get('bookId'),
+        title: this.get('title'),
+        author: this.get('author'),
+        pagesCount: this.get('pagesCount'),
+        coverURL: this.get('coverURL'),
+        descriURL: this.get('descriURL'),
+        tags: this.get('tags').split(','),
       });
-    },
-    cancelForm(e){
-      e.preventDefault();
-      this.transitionToRoute('book.index')
-    }
+    }    
   },
 
   didReceiveAttrs() {

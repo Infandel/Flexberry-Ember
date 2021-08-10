@@ -11,6 +11,7 @@
   },
   "repository": "",
   "scripts": {
+    "server": "json-server --watch tests/test-data/db.json",
     "build": "ember build",
     "lint:js": "eslint ./*.js app blueprints config lib server tests",
     "start": "ember serve",

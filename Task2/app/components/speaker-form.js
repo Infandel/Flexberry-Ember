@@ -5,16 +5,12 @@ export default Component.extend({
     submitForm(e){
       e.preventDefault();
       this.onsubmit({
-          id: this.get('speakerId'),
-          name: this.get('name'),
-          surname: this.get('surname'),
-          patronymic: this.get('patronymic')
+        id: this.get('speakerId'),
+        name: this.get('name'),
+        surname: this.get('surname'),
+        patronymic: this.get('patronymic')
       });
     },
-    cancelForm(e){
-      e.preventDefault();
-      this.transitionToRoute('speaker.index')
-    }
   },
 
   didReceiveAttrs() {

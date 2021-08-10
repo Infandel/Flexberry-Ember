@@ -30,7 +30,8 @@
         "here"
       ],
       "id": 2,
-      "coverURL": "http://www.googleexmaple.com"
+      "coverURL": "http://www.googleexmaple.com",
+      "descriURL": "https://www.di.fm/playlists"
     },
     {
       "title": "1984",
@@ -117,6 +118,19 @@
         "handled"
       ],
       "id": 9
+    },
+    {
+      "title": "Winter",
+      "author": "Orwell",
+      "pagesCount": "360",
+      "coverURL": "https://getbootstrap.com/docs/4.3/components/card/",
+      "descriURL": "https://getbootstrap.com/docs/4.3/components/card/",
+      "tags": [
+        "filthy",
+        "handled",
+        "comedy"
+      ],
+      "id": 10
     }
   ]
 }
