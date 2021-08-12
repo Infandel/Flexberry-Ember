@@ -1,4 +1,47 @@
 import Component from '@ember/component';
+import { inject as service } from '@ember/service';
 
 export default Component.extend({
+  store: service(),
+  actions: {
+    submitForm(e){
+      e.preventDefault();
+      this.onsubmit({
+        reportDate: this.get('reportDate'),
+        bookScore: this.get('bookScore'),
+        presentationURL: this.get('presentationURL'),
+        videoURL: this.get('videoURL'),
+        review: this.get('review'),
+        speaker: this.get('speaker'),
+        book: this.get('book'),
+        clubMeeting: this.get('club-meeting'),
+      });
+    },
+
+    searchSpeaker(query) {
+      return this.get('store').query('speaker', { q: query })
+    },
+    
+    searchBook(query) {
+      return this.get('store').query('book', { q: query })
+    },
+
+    searchClubMeeting(query) {
+      return this.get('store').query('club-meeting', { q: query })
+    }
+  },
+
+  didReceiveAttrs() {
+    this._super(...arguments);
+    this.setProperties({
+      reportDate: this.get('report.reportDate'),
+      bookScore: this.get('report.bookScore'),
+      presentationURL: this.get('report.presentationURL'),
+      videoURL: this.get('report.videoURL'),
+      review: this.get('report.review'),
+      speaker: this.get('report.speaker'),
+      book: this.get('report.book'),
+      clubMeeting: this.get('report.club-meeting'),
+    });
+  }
 });

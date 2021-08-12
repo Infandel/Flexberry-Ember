@@ -1,12 +1,6 @@
 {
   "speakers": [
     {
-      "id": 3,
-      "name": "Edgar",
-      "surname": "Por",
-      "patronymic": "Pavlovich"
-    },
-    {
       "name": "Ophelia",
       "surname": "Wanderbook",
       "patronymic": "Olgovna",
@@ -17,6 +11,18 @@
       "surname": "Black",
       "patronymic": "White",
       "id": 7
+    },
+    {
+      "name": "Johnny",
+      "surname": "Malkovich",
+      "patronymic": "Billiertron",
+      "id": 8
+    },
+    {
+      "name": "Roberty",
+      "surname": "Downy",
+      "patronymic": "Jr.",
+      "id": 9
     }
   ],
   "books": [
@@ -32,19 +38,6 @@
       "id": 2,
       "coverURL": "http://www.googleexmaple.com",
       "descriURL": "https://www.di.fm/playlists"
-    },
-    {
-      "title": "1984",
-      "author": "George Orwell",
-      "pagesCount": "300",
-      "coverURL": "http://www.googleexmaple.com",
-      "descriptionURL": "www.thisawesomebook.com",
-      "tags": [
-        "#future",
-        " #communism"
-      ],
-      "id": 3,
-      "descriURL": "http://www.dummy.com"
     },
     {
       "title": "360 degrees on fahrenheit",
@@ -95,18 +88,6 @@
       "id": 7
     },
     {
-      "title": "Dummy",
-      "author": "Data",
-      "pagesCount": "100",
-      "coverURL": "http://www.googleexmaple.com",
-      "descriURL": "http://www.googleexmaple.com",
-      "tags": [
-        "#awesome",
-        " #input"
-      ],
-      "id": 8
-    },
-    {
       "title": "Dumb",
       "author": "DataYea",
       "pagesCount": "1010",
@@ -131,6 +112,34 @@
         "comedy"
       ],
       "id": 10
+    }
+  ],
+  "club-meetings": [
+    {
+      "meetingDate": "2021-07-30T19:00:00.000Z",
+      "id": 3
+    },
+    {
+      "meetingDate": "2021-04-11T19:00:00.000Z",
+      "id": 4
+    },
+    {
+      "meetingDate": "2021-02-14T19:00:00.000Z",
+      "id": 5
+    },
+    {
+      "meetingDate": "2021-08-18T19:00:00.000Z",
+      "id": 6
+    }
+  ],
+  "reports":[
+    {
+      "reportDate": "2021-02-14T19:00:00.000Z",
+      "bookScore": 3,
+      "presentationURL": "https://getbootstrap.com/docs/4.3/components/card/",
+      "videoURL": "http://www.googleexmaple.com",
+      "review": "Awesome book, i will recommend it to anyone",
+      "id":1
     }
   ]
 }

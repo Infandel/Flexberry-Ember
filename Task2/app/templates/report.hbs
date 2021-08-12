@@ -4,8 +4,7 @@
 			<div class="form-row navbar-panel justify-content-between">
 				<div class="col-md-auto">
 					<div class="form-group row">
-						{{input type="text" value=search class="form-control mr-2 search-long search-only" placeholder="Поиск по ФИО"}}
-            {{#link-to "report.create" class="btn btn-outline-primary my-2"}}
+            {{#link-to "report-create" class="btn btn-outline-primary my-2"}}
 						  Добавить Доклад
 					  {{/link-to}}
 					</div>          
@@ -24,7 +23,11 @@
               <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">
-                      {{report-item reportId=report.id name=report.name surname=report.surname patronymic=report.patronymic}}
+                      {{#link-to "report.detail" report.id}}
+                      <p>Дата доклада: {{report.reportDate}}</p>
+                      {{/link-to}}
+                      <p>По книге: {{report.book.title}}</p>
+                      <p>Докладчик: {{report.speaker.surname}} {{report.speaker.name}}</p>
                     </h5>
                 </div>						
               </div>

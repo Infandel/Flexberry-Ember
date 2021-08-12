@@ -4,6 +4,7 @@ export default Component.extend({
   actions: {
     submitForm(e){
       e.preventDefault();
+      
       this.onsubmit({
         id: this.get('speakerId'),
         name: this.get('name'),
