@@ -1,7 +1,7 @@
 <div class="container h-100">
   <div class="htop">
-    <h3 class="text-center">Редактирование Доклада:
-      <h4>{{model.title}}</h4>
+    <h3 class="text-center">Редактирование Доклада за:
+      <h4>{{model.reportDate}}</h4>
     </h3>
     {{report-form report=model onsubmit=(action "saveReport")}}
   </div>

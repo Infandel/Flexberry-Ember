@@ -8,12 +8,12 @@ export default Route.extend({
     this.get('moment').setTimeZone("Asia/Shanghai");
   },
 
-  actions: {
-    error(error, transition) {
-      if (transition) {
-        transition.abort();
-      }
-      this.intermediateTransitionTo('error', { error: error.message });
-    }
-  }
+  // actions: {
+  //   error(error, transition) {
+  //     if (transition) {
+  //       transition.abort();
+  //     }
+  //     this.intermediateTransitionTo('error', { error: error.message });
+  //   }
+  // }
 });
