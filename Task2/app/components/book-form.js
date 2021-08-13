@@ -11,7 +11,7 @@ export default Component.extend({
         pagesCount: this.get('pagesCount'),
         coverURL: this.get('coverURL'),
         descriURL: this.get('descriURL'),
-        tags: this.get('tags').split(','),
+        tags: this.get('tags').toString().split(','),
       });
     }    
   },

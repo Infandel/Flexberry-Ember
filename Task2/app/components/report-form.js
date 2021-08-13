@@ -4,7 +4,7 @@ import { inject as service } from '@ember/service';
 export default Component.extend({
   store: service(),
   actions: {
-    submitForm(e){
+    saveReport(e){
       e.preventDefault();
       this.onsubmit({
         reportDate: this.get('reportDate'),
@@ -19,15 +19,15 @@ export default Component.extend({
     },
 
     searchSpeaker(query) {
-      return this.get('store').query('speaker', { q: query })
+      return this.get('store').query('speaker', { q: query })      
     },
     
     searchBook(query) {
-      return this.get('store').query('book', { q: query })
+      return this.get('store').query('book', { title_like: query })
     },
 
     searchClubMeeting(query) {
-      return this.get('store').query('club-meeting', { q: query })
+      return this.get('store').query('club-meeting', { meetingDate_like: query })
     }
   },
 

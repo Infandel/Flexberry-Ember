@@ -53,6 +53,11 @@
         </div>
       </div>
     </div>
+    {{#each model.reports as |report|}}
+        <il class="list-group-item">
+          {{report.reportDate}}: <a href={{report.videoURL}}>Ccылка на выступление</a>
+        </il>
+    {{/each}}
     {{#each model as |club-meeting|}} 
     <div class="border border-dark rounded p-4 mb-4">
       <h4>Дата встречи</h4>
@@ -71,6 +76,11 @@
         </div>
       </div>
       <h4>Список докладов</h4>
+      {{#each model.reports as |report|}}
+        <il class="list-group-item">
+          {{report.reportDate}}: <a href={{report.videoURL}}>Ccылка на выступление</a>
+        </il>
+      {{/each}}
       <ul class="list-group">
         <li class="list-group-item">
           <div class="row h-100 justify-content-between">

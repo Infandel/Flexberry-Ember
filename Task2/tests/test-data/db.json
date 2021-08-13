@@ -8,7 +8,7 @@
     },
     {
       "name": "Joe",
-      "surname": "Black",
+      "surname": "Green",
       "patronymic": "White",
       "id": 7
     },
@@ -23,6 +23,12 @@
       "surname": "Downy",
       "patronymic": "Jr.",
       "id": 9
+    },
+    {
+      "name": "Helga",
+      "surname": "Octavian",
+      "patronymic": "Bladed",
+      "id": 10
     }
   ],
   "books": [
@@ -40,85 +46,33 @@
       "descriURL": "https://www.di.fm/playlists"
     },
     {
-      "title": "360 degrees on fahrenheit",
-      "author": "Rey Bradberry",
-      "pagesCount": "250",
-      "coverURL": "http://www.googleexmaple.com",
-      "descriptionURL": "www.bradberry.com",
+      "title": "Fifthy shades of him",
+      "author": "Rowling Joanne",
+      "pagesCount": 250,
+      "coverURL": "https://getbootstrap.com/docs/4.0/components/forms/",
+      "descriURL": "https://guides.emberjs.com/release/components/built-in-components/",
       "tags": [
-        "future",
-        "awesome"
+        "new",
+        "handsome",
+        "past"
+      ],
+      "id": 3
+    },
+    {
+      "title": "Polymorphic",
+      "author": "Dorian Grey",
+      "pagesCount": 140,
+      "coverURL": "https://ember-power-select.com/docs/how-to-use-it",
+      "descriURL": "https://guides.emberjs.com/v3.1.0/routing/query-params/",
+      "tags": [
+        "science",
+        "fiction",
+        "nature"
       ],
       "id": 4
-    },
-    {
-      "title": "1000 words per day",
-      "author": "Fluent Boy",
-      "pagesCount": "360",
-      "coverURL": "http://www.googleexmaple.com",
-      "descriptionURL": "www.apperntly.com",
-      "tags": [
-        "fluent",
-        "rapid"
-      ],
-      "id": 5
-    },
-    {
-      "title": "Kevin does",
-      "author": "Kevin Kostner",
-      "pagesCount": "100",
-      "coverURL": "http://www.googleexmaple.com",
-      "descriURL": "www.wrong.com",
-      "tags": [
-        "comedy",
-        "awesome"
-      ],
-      "id": 6
-    },
-    {
-      "title": "Kolen",
-      "author": "Kolen Kinsky",
-      "pagesCount": "150",
-      "coverURL": "http://www.googleexmaple.com",
-      "descriURL": "http://www.googleexmaple.com",
-      "tags": [
-        "comedy",
-        "smart"
-      ],
-      "id": 7
-    },
-    {
-      "title": "Dumb",
-      "author": "DataYea",
-      "pagesCount": "1010",
-      "coverURL": "http://www.googleexmaple.com",
-      "descriURL": "http://www.dummy.com",
-      "tags": [
-        "awesome",
-        "book",
-        "handled"
-      ],
-      "id": 9
-    },
-    {
-      "title": "Winter",
-      "author": "Orwell",
-      "pagesCount": "360",
-      "coverURL": "https://getbootstrap.com/docs/4.3/components/card/",
-      "descriURL": "https://getbootstrap.com/docs/4.3/components/card/",
-      "tags": [
-        "filthy",
-        "handled",
-        "comedy"
-      ],
-      "id": 10
     }
   ],
   "club-meetings": [
-    {
-      "meetingDate": "2021-07-30T19:00:00.000Z",
-      "id": 3
-    },
     {
       "meetingDate": "2021-04-11T19:00:00.000Z",
       "id": 4
@@ -128,18 +82,62 @@
       "id": 5
     },
     {
-      "meetingDate": "2021-08-18T19:00:00.000Z",
-      "id": 6
+      "meetingDate": "2021-07-08T19:00:00.000Z",
+      "id": 7
+    },
+    {
+      "meetingDate": "2021-07-07T19:00:00.000Z",
+      "id": 8
+    },
+    {
+      "meetingDate": "2021-07-09T19:00:00.000Z",
+      "id": 9
     }
   ],
-  "reports":[
+  "reports": [
     {
-      "reportDate": "2021-02-14T19:00:00.000Z",
+      "reportDate": "2021-07-09T19:00:00.000Z",
+      "bookScore": 4,
+      "presentationURL": "https://getbootstrap.com/docs/4.0/components/forms/",
+      "videoURL": "https://guides.emberjs.com/release/components/built-in-components/",
+      "review": "Pretty good! Would recommend it to younger readers",
+      "speakerId": 8,
+      "bookId": 2,
+      "clubMeetingId": 3,
+      "id": 5
+    },
+    {
+      "reportDate": "2021-07-07T19:00:00.000Z",
+      "bookScore": 4,
+      "presentationURL": "https://yare.io/",
+      "videoURL": "https://stackoverflow.com/questions/16463958/how-to-use-multiple-models-with-a-single-route-in-emberjs-ember-data",
+      "review": "Awesome book! Keep on doing what are u doing!",
+      "speakerId": 8,
+      "bookId": 2,
+      "clubMeetingId": 3,
+      "id": 7
+    },
+    {
+      "reportDate": "2021-07-14T19:00:00.000Z",
+      "bookScore": 2,
+      "presentationURL": "https://api.emberjs.com/ember-data/3.1/classes/DS.Store/methods/query?anchor=query",
+      "videoURL": "https://getbootstrap.com/docs/4.0/components/forms/",
+      "review": "Awesome book!",
+      "speakerId": 9,
+      "bookId": 2,
+      "clubMeetingId": 3,
+      "id": 8
+    },
+    {
+      "reportDate": "2021-07-08T19:00:00.000Z",
       "bookScore": 3,
-      "presentationURL": "https://getbootstrap.com/docs/4.3/components/card/",
-      "videoURL": "http://www.googleexmaple.com",
-      "review": "Awesome book, i will recommend it to anyone",
-      "id":1
+      "presentationURL": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT",
+      "videoURL": "https://api.emberjs.com/ember-data/3.2/classes/DS.Transform/methods",
+      "review": "Awesome book! Buy it no matter how much many do you have. Masterpiece!",
+      "speakerId": 7,
+      "bookId": 2,
+      "clubMeetingId": 3,
+      "id": 9
     }
   ]
 }

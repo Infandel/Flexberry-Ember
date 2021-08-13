@@ -9,7 +9,7 @@ export default Route.extend({
 
   model({ search }) {
     if (search) {
-      return this.get('store').query('club-meeting', { q: search });
+      return this.get('store').query('club-meeting', { meetingDate_like: search });
     }
 
     return this.get('store').findAll('club-meeting');

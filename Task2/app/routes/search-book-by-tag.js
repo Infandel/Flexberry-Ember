@@ -6,16 +6,18 @@ export default Route.extend({
       refreshModel: true
     }
   },
+
   model({ search }) {
     if (search) {
-      return this.get('store').query('speaker', { q: search });
+      return this.get('store').query('book', { tags_like: search });
     }
-    
-    return this.get('store').findAll('speaker')
+
+    return this.get('store').findAll('book');
   },
+
   actions: {
     loading() {
       return false;
     }
   }
-})
+});

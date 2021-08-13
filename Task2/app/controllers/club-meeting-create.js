@@ -7,7 +7,7 @@ export default Controller.extend({
         let newClubMeeting = this.get('store').createRecord('club-meeting', clubMeeting)
         await newClubMeeting.save();
 
-        this.transitionToRoute('club-meeting.index');
+        this.transitionToRoute('club-meeting');
       }
       catch(e){
         this.send('error', e);

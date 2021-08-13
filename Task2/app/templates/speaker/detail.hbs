@@ -7,6 +7,16 @@
       </h5>
   </div>
   <div class="card-footer">
+    <h3 class="text-center">Список выступлений:</h3>
+    <ul class="list-group">
+      {{#each model.reports as |report|}}
+        <il class="list-group-item">
+          {{report.reportDate}}: <a href={{report.videoURL}}>Ccылка на выступление</a>
+        </il>
+      {{/each}}
+    </ul>
+  </div>
+  <div class="card-footer">
     {{!-- <div class="row"> --}}
       <div class="text-left">
         {{#link-to "speaker.index" class="btn btn-outline-primary"}}

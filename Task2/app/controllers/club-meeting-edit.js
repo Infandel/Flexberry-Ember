@@ -7,7 +7,7 @@ export default Controller.extend({
         this.get('model').setProperties(clubMeeting)
         await this.get('model').save();
 
-        this.transitionToRoute('club-meeting.index');
+        this.transitionToRoute('club-meeting');
       }
       catch(e){
         this.send('error', e);
@@ -17,7 +17,7 @@ export default Controller.extend({
       try {
         await clubMeeting.destroyRecord();
 
-        this.transitionToRoute('club-meeting.index');
+        this.transitionToRoute('club-meeting');
       }
       catch (e) {
         this.send('error', e);

@@ -24,9 +24,10 @@ Router.map(function() {
   this.route('club-meeting-edit', { path: "/club-meeting-edit/:id" });
   this.route('report', { path: "/reports"}, function() {
     this.route('detail', { path: "/:id"});
-  });  
+  });
   this.route('report-create');
   this.route('report-edit', { path: "/report-edit/:id" });
+  this.route('search-book-by-tag', { path: "/search-book-by-tag" });
 });
 
 export default Router;
