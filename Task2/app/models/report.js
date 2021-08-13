@@ -9,5 +9,5 @@ export default DS.Model.extend({
 
   speaker: DS.belongsTo('speaker'),
   book: DS.belongsTo('book'),
-  clubMeeting: DS.belongsTo('club-meeting')
+  meeting: DS.belongsTo('meeting')
 });

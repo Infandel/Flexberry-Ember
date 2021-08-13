@@ -14,7 +14,7 @@ export default Component.extend({
         review: this.get('review'),
         speaker: this.get('speaker'),
         book: this.get('book'),
-        clubMeeting: this.get('club-meeting'),
+        meeting: this.get('meeting'),
       });
     },
 
@@ -26,8 +26,8 @@ export default Component.extend({
       return this.get('store').query('book', { title_like: query })
     },
 
-    searchClubMeeting(query) {
-      return this.get('store').query('club-meeting', { meetingDate_like: query })
+    searchMeeting(query) {
+      return this.get('store').query('meeting', { meetingDate_like: query })
     }
   },
 
@@ -41,7 +41,7 @@ export default Component.extend({
       review: this.get('report.review'),
       speaker: this.get('report.speaker'),
       book: this.get('report.book'),
-      clubMeeting: this.get('report.club-meeting'),
+      meeting: this.get('report.meeting'),
     });
   }
 });

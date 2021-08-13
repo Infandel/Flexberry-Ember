@@ -5,7 +5,7 @@ export default Component.extend({
   store: service(),
 
   actions: {
-    async saveClubMeeting(e) {
+    async saveMeeting(e) {
       e.preventDefault();
       this.onsubmit({
         meetingDate: this.get('meetingDate'),
@@ -15,7 +15,7 @@ export default Component.extend({
 
   didReceiveAttrs() {
     this.setProperties({
-      meetingDate: this.get('club-meeting.meetingDate'),
+      meetingDate: this.get('meeting.meetingDate'),
     });
   },
 });

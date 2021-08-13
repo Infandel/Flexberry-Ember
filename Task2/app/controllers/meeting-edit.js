@@ -2,22 +2,22 @@ import Controller from '@ember/controller';
 
 export default Controller.extend({
   actions: {
-    async saveClubMeeting(clubMeeting) {
+    async saveMeeting(meeting) {
       try {
-        this.get('model').setProperties(clubMeeting)
+        this.get('model').setProperties(meeting)
         await this.get('model').save();
 
-        this.transitionToRoute('club-meeting');
+        this.transitionToRoute('meeting');
       }
       catch(e){
         this.send('error', e);
       }
     },
-    async deleteClubMeeting(clubMeeting) {
+    async deleteMeeting(meeting) {
       try {
-        await clubMeeting.destroyRecord();
+        await meeting.destroyRecord();
 
-        this.transitionToRoute('club-meeting');
+        this.transitionToRoute('meeting');
       }
       catch (e) {
         this.send('error', e);

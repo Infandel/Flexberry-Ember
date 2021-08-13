@@ -44,8 +44,8 @@
 
   <div class="form-group">
     <label >Выберите Дату Клубной Встречи</label>
-      {{#power-select searchEnabled=true onchange=(action (mut club-meeting)) selected=club-meeting search=(action "searchClubMeeting") as |club-meeting|}}
-        {{club-meeting.meetingDate}} 
+      {{#power-select searchEnabled=true onchange=(action (mut meeting)) selected=meeting search=(action "searchMeeting") as |meeting|}}
+        {{meeting.meetingDate}} 
       {{/power-select}}
   </div>
 

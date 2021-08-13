@@ -19,9 +19,9 @@ Router.map(function() {
   });
   this.route('book-edit', { path: "/book-edit/:id" });
   this.route('book-create');
-  this.route('club-meeting', { path: '/club-meetings' });
-  this.route('club-meeting-create');
-  this.route('club-meeting-edit', { path: "/club-meeting-edit/:id" });
+  this.route('meeting', { path: '/meetings' });
+  this.route('meeting-create');
+  this.route('meeting-edit', { path: "/meeting-edit/:id" });
   this.route('report', { path: "/reports"}, function() {
     this.route('detail', { path: "/:id"});
   });

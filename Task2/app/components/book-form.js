@@ -24,7 +24,7 @@ export default Component.extend({
       author: this.get('book.author'),
       pagesCount: this.get('book.pagesCount'),
       coverURL: this.get('book.coverURL'),
-      descriURL: this.get('descriURL'),
+      descriURL: this.get('book.descriURL'),
       tags: this.get('book.tags'),
     });
   }

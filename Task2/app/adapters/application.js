@@ -21,7 +21,7 @@ export default DS.JSONAPIAdapter.extend({
       url += '?_embed=reports';
     }
 
-    if (modelName === 'club-meeting' && requestType === 'findAll') {
+    if (modelName === 'meeting' && requestType === 'findAll') {
       url += '?_embed=reports'
     }
 
