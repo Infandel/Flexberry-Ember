@@ -11,6 +11,6 @@ export default Controller.extend({
       catch (e) {
         this.send('error', e);
       }
-    }
-  }
+    },
+  },
 });

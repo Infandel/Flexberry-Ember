@@ -1,6 +1,10 @@
 <div class="col mb-4">
   <div class="card">
-    <img src="images/book-cover.jpg" width="250" height="250" class="rounded mx-auto d-block" alt="Фото спикера">
+    {{#if model.coverURL}}
+      <img src={{model.coverURL}} width="250" height="250" class="rounded mx-auto d-block" alt="Фото обложки">
+    {{else}}
+      <img src="images/book-cover.jpg" width="250" height="250" class="rounded mx-auto d-block" alt="Фото обложки">
+    {{/if}}
   <div class="card-body">
     <h3 class="card-title text-center">
       Книга: {{model.title}}       

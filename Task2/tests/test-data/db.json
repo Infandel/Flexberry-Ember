@@ -36,7 +36,7 @@
       "title": "Fifthy shades of him",
       "author": "Rowling Joanne",
       "pagesCount": 250,
-      "coverURL": "https://getbootstrap.com/docs/4.0/components/forms/",
+      "coverURL": "https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781451678185_9781451678185_hr.jpg",
       "descriURL": "https://guides.emberjs.com/release/components/built-in-components/",
       "tags": [
         "new",
@@ -49,7 +49,7 @@
       "title": "Polymorphic",
       "author": "Dorian Grey",
       "pagesCount": 140,
-      "coverURL": "https://ember-power-select.com/docs/how-to-use-it",
+      "coverURL": "http://www.bookdoor.eu/uploads/bookdoor/t/2016/03/12-1984-05ee6d800139b975d6da26cee8a917da.jpeg",
       "descriURL": "https://guides.emberjs.com/v3.1.0/routing/query-params/",
       "tags": [
         "science",
@@ -62,7 +62,7 @@
       "title": "Eastren dominance",
       "author": "Mao Dze Dun",
       "pagesCount": 180,
-      "coverURL": "https://api.emberjs.com/ember-data/3.2/classes/DS.DateTransform",
+      "coverURL": "",
       "descriURL": "https://stackoverflow.com/questions/47325785/emberjs-moment-format-date-output-input-repeats-todays-date-in-every",
       "tags": [
         "awesome",
@@ -71,6 +71,32 @@
         "unite"
       ],
       "id": 5
+    },
+    {
+      "title": "Flower Book",
+      "author": "Emily Robbins",
+      "pagesCount": 160,
+      "coverURL": "https://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg",
+      "descriURL": "https://stackoverflow.com/questions/42308976/how-to-slice-string-from-the-end-in-javascript/42309034",
+      "tags": [
+        "nature",
+        "flowers",
+        "awesome"
+      ],
+      "id": 6
+    },
+    {
+      "title": "Straight Book",
+      "author": "Fred Broods",
+      "pagesCount": 160,
+      "coverURL": "",
+      "descriURL": "https://api.emberjs.com/ember-data/3.2/classes/DS.DateTransform",
+      "tags": [
+        "empty",
+        "urban",
+        "content"
+      ],
+      "id": 7
     }
   ],
   "meetings": [
