@@ -13,9 +13,15 @@ export default Controller.extend({
         this.send('error', e);
       }
     },
-    async deleteMeeting(meeting) {
+    async deleteMeeting() {
       try {
-        await meeting.destroyRecord();
+        let reports = this.model.reports.toArray();
+
+        await this.model.destroyRecord();
+
+        reports.forEach(report => {
+          report.unloadRecord();
+        });
 
         this.transitionToRoute('meeting');
       }

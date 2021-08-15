@@ -7,7 +7,7 @@ export default Controller.extend({
         this.get('model').setProperties(report)
         await this.get('model').save();
 
-        this.transitionToRoute('report.index');
+        this.transitionToRoute('meeting');
       }
       catch(e){
         this.send('error', e);

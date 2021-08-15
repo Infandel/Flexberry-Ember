@@ -65,7 +65,7 @@
         <div class="col-md-auto">
           {{#link-to "meeting-edit" meeting.id}}
           <button type="button" class="btn btn-outline-primary" >
-            Редактировать дату встречи
+            Редактировать дату встречи или добавить доклад
           </button>
           {{/link-to}}
         </div>
@@ -74,13 +74,13 @@
       {{#each meeting.reports as |report|}}
       <ul class="list-group">
         <li class="list-group-item">
-          {{#link-to "report.detail" report.id class="btn btn-outline-primary"}}
+          {{#link-to "report-detail" report.id class="btn btn-outline-primary"}}
             Информация о докладе
           {{/link-to}}
           <div class="row h-100 justify-content-between">
             <div class="col-md-2 text-center">
               <h5 class="py-2">Спикер</h5>
-              <img src="images/speaker.jpg" class="rounded w-100" alt="Спикер">
+              <img src="/images/speaker.jpg" class="rounded w-100" alt="Спикер">
               <p>{{report.speaker.surname}} {{report.speaker.name}}</p>
             </div>
             <div class="col-md-2 text-center">

@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  reportDate: DS.attr('date-string'),
+  reportDate: DS.attr('string'),
   bookScore: DS.attr('number'),
   presentationURL: DS.attr('string'),
   videoURL: DS.attr('string'),

@@ -101,73 +101,36 @@
   ],
   "meetings": [
     {
-      "meetingDate": "2021-04-11T19:00:00.000Z",
-      "id": 4
+      "meetingDate": "2021-08-25T19:00:00.000Z",
+      "id": 8
     },
     {
-      "meetingDate": "2021-02-14T19:00:00.000Z",
-      "id": 5
-    },
-    {
-      "meetingDate": "2021-07-08T19:00:00.000Z",
-      "id": 7
+      "meetingDate": "2021-08-03T19:00:00.000Z",
+      "id": 9
     }
   ],
   "reports": [
     {
-      "reportDate": "2021-07-09T19:00:00.000Z",
+      "reportDate": "07.08.2021",
       "bookScore": 4,
-      "presentationURL": "https://getbootstrap.com/docs/4.0/components/forms/",
-      "videoURL": "https://guides.emberjs.com/release/components/built-in-components/",
-      "review": "Pretty good! Would recommend it to younger readers",
-      "speakerId": 8,
-      "bookId": 3,
-      "meetingId": 4,
-      "id": 5
-    },
-    {
-      "reportDate": "2021-07-07T19:00:00.000Z",
-      "bookScore": 4,
-      "presentationURL": "https://yare.io/",
-      "videoURL": "https://stackoverflow.com/questions/16463958/how-to-use-multiple-models-with-a-single-route-in-emberjs-ember-data",
-      "review": "Awesome book! Keep on doing what are u doing!",
-      "speakerId": 8,
-      "bookId": 4,
-      "meetingId": 4,
-      "id": 7
-    },
-    {
-      "reportDate": "2021-07-14T19:00:00.000Z",
-      "bookScore": 2,
-      "presentationURL": "https://api.emberjs.com/ember-data/3.1/classes/DS.Store/methods/query?anchor=query",
+      "presentationURL": "https://api.emberjs.com/ember-data/3.2/classes/DS.Transform/methods",
       "videoURL": "https://getbootstrap.com/docs/4.0/components/forms/",
       "review": "Awesome book!",
-      "speakerId": 9,
-      "bookId": 3,
-      "meetingId": 5,
-      "id": 8
-    },
-    {
-      "reportDate": "2021-07-08T19:00:00.000Z",
-      "bookScore": 3,
-      "presentationURL": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT",
-      "videoURL": "https://api.emberjs.com/ember-data/3.2/classes/DS.Transform/methods",
-      "review": "Awesome book! Buy it no matter how much many do you have. Masterpiece!",
       "speakerId": 7,
-      "bookId": 4,
-      "meetingId": 7,
-      "id": 9
+      "bookId": 3,
+      "meetingId": 8,
+      "id": 11
     },
     {
-      "reportDate": "2021-07-14T19:00:00.000Z",
-      "bookScore": 5,
-      "presentationURL": "https://guides.emberjs.com/release/components/built-in-components/",
-      "videoURL": "https://getbootstrap.com/docs/4.0/components/forms/",
-      "review": "Awesome book! Try it out! No matters at what cost! Just do it!",
+      "reportDate": "04.08.2021",
+      "bookScore": 3,
+      "presentationURL": "https://guides.emberjs.com/v3.3.0/object-model/computed-properties/",
+      "videoURL": "https://guides.emberjs.com/release/components/built-in-components/",
+      "review": "Awe Sir!",
       "speakerId": 10,
       "bookId": 3,
-      "meetingId": 4,
-      "id": 10
+      "meetingId": 9,
+      "id": 12
     }
   ]
 }

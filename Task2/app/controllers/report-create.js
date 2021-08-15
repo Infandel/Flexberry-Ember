@@ -7,7 +7,7 @@ export default Controller.extend({
         let newReport = this.get('store').createRecord('report', report)
         await newReport.save();
 
-        this.transitionToRoute('report.index');
+        this.transitionToRoute('meeting');
       }
       catch(e){
         this.send('error', e);

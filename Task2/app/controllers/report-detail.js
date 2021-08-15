@@ -6,7 +6,7 @@ export default Controller.extend({
       try {
         await report.destroyRecord();
         
-        this.transitionToRoute('report.index');
+        this.transitionToRoute('meeting');
       }
       catch (e) {
         this.send('error', e);

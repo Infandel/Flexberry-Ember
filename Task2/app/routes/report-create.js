@@ -1,13 +1,24 @@
 import Route from '@ember/routing/route';
 
 export default Route.extend({
-  model() {
+  model({ id }) {
+    let meeting = this.get('store').findRecord('meeting', id)
+
     return {
-      reportDate: null,
-      bookScore: null,
-      presentationURL: '',
-      videoURL: '',
-      review: '',
+      meeting,
+      report: {
+        reportDate: '',
+        bookScore: null,
+        presentationURL: '',
+        videoURL: '',
+        review: '',
+        meeting
+      }
     }
   },
 });
+// export default Route.extend({
+//   model({ id }) {
+//     return this.get("store").findRecord('meeting', id);
+//   }
+// });

@@ -2,15 +2,15 @@ import Controller from '@ember/controller';
 
 export default Controller.extend({
   actions: {
-    async deleteBook(book) {
+    async deleteSpeaker(speaker) {
       try {
-        await book.destroyRecord();
-        
-        this.transitionToRoute('book.index');
+        await speaker.destroyRecord();
+
+        this.transitionToRoute('speaker');
       }
       catch (e) {
         this.send('error', e);
       }
-    },
-  },
+    }
+  }
 });

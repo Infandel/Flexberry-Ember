@@ -1,6 +1,6 @@
 <div class="col mb-4">
   <div class="card">
-  <img src="images/speaker.jpg" width="250" height="250" class="rounded mx-auto d-block" alt="Фото спикера">
+  <img src="/images/speaker.jpg" width="250" height="250" class="rounded mx-auto d-block" alt="Фото спикера">
   <div class="card-body">
       <h5 class="card-title text-center">
          {{model.surname}} {{model.name}} {{model.patronymic}}
@@ -19,7 +19,7 @@
   <div class="card-footer">
     {{!-- <div class="row"> --}}
       <div class="text-left">
-        {{#link-to "speaker.index" class="btn btn-outline-primary"}}
+        {{#link-to "speaker" class="btn btn-outline-primary"}}
           Вернуться
         {{/link-to}}
       </div>

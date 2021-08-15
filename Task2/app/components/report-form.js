@@ -7,7 +7,7 @@ export default Component.extend({
     saveReport(e){
       e.preventDefault();
       this.onsubmit({
-        reportDate: this.get('reportDate'),
+        reportDate: this.get('meeting.meetingDate'),
         bookScore: this.get('bookScore'),
         presentationURL: this.get('presentationURL'),
         videoURL: this.get('videoURL'),
@@ -26,15 +26,15 @@ export default Component.extend({
       return this.get('store').query('book', { title_like: query })
     },
 
-    searchMeeting(query) {
-      return this.get('store').query('meeting', { meetingDate_like: query })
-    }
+    // searchMeeting(query) {
+    //   return this.get('store').query('meeting', { meetingDate_like: query })
+    // }
   },
 
   didReceiveAttrs() {
     this._super(...arguments);
     this.setProperties({
-      reportDate: this.get('report.reportDate'),
+      reportDate: this.get('report.meeting.meetingDate'),
       bookScore: this.get('report.bookScore'),
       presentationURL: this.get('report.presentationURL'),
       videoURL: this.get('report.videoURL'),
@@ -43,5 +43,6 @@ export default Component.extend({
       book: this.get('report.book'),
       meeting: this.get('report.meeting'),
     });
+    debugger
   }
 });

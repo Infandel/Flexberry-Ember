@@ -7,27 +7,22 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('speaker', { path: '/speakers' }, function() {
-    this.route('detail', { path: "/:id" });
-  });
+  this.route('speaker', { path: '/speakers' });
+  this.route('speaker-detail', { path: "/speakers/:id" });
   this.route('speaker-create');
   this.route('speaker-edit', { path: "/speaker-edit/:id" });
   this.route('error', { path: '/:error' });
   this.route('not-found', { path: '*path' });
-  this.route('book', { path: '/books' }, function() {
-    this.route('detail', { path: "/:id" });
-  });
+  this.route('book', { path: '/books' });
+  this.route('book-detail', { path: "/books/:id" });
   this.route('book-edit', { path: "/book-edit/:id" });
   this.route('book-create');
   this.route('meeting', { path: '/meetings' });
-  this.route('meeting-create');
+  this.route('meeting-create', );
   this.route('meeting-edit', { path: "/meeting-edit/:id" });
-  this.route('report', { path: "/reports"}, function() {
-    this.route('detail', { path: "/:id"});
-  });
-  this.route('report-create');
+  this.route('report-create', { path: "/report-create/:id"});
   this.route('report-edit', { path: "/report-edit/:id" });
-  this.route('search-book-by-tag', { path: "/search-book-by-tag" });
+  this.route('report-detail', { path: "/reports/:id" });
 });
 
 export default Router;

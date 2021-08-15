@@ -1,0 +1,54 @@
+<div class="col mb-4">
+  <div class="card">
+    {{#if model.coverURL}}
+      <img src={{model.coverURL}} width="250" height="250" class="rounded mx-auto d-block" alt="Фото обложки">
+    {{else}}
+      <img src="/images/book-cover.jpg" width="250" height="250" class="rounded mx-auto d-block" alt="Фото обложки">
+    {{/if}}
+    <div class="card-body">
+      <h3 class="card-title text-center">
+        Книга: {{model.title}}       
+      </h3>
+      <h6 class="card-subtitle mb-2 text-left">
+        <p>Автор: {{model.author}}</p>
+        <p>Количество страниц: {{model.pagesCount}}</p>
+        <p>Ссылка на обложку: <a href={{model.coverURL}} class="link-warning">{{model.coverURL}}</a></p>
+        <p>Ссылка на описание: <a href={{model.descriURL}} class="link-warning">{{model.descriURL}}</a></p>
+        <p>Средняя оценка книги: {{model.averageBookScore}}</p>
+        <p>Тэги: 
+        {{#each model.tags as |tag|}}
+          #{{tag}}
+        {{/each}}
+        </p>
+      </h6>
+    </div>
+    <div class="card-footer">
+      <h4 class="text-center">Список выступлений:</h4>
+      <ul class="list-group">
+        {{#each model.reports as |report|}}
+          <il class="list-group-item">
+            {{report.reportDate}}: <a href={{report.videoURL}}>Ccылка на выступление</a>
+          </il>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="card-footer">
+      {{!-- <div class="row"> --}}
+        <div class="text-left">
+          {{#link-to "book" class="btn btn-outline-primary"}}
+            Вернуться
+          {{/link-to}}
+        </div>
+        <div class="text-right">
+          {{#link-to "book-edit" model.id class="btn btn-outline-primary"}}
+            Редактировать
+          {{/link-to}}
+          <button type="button" onclick={{ action "deleteBook" model }} class="btn btn-outline-danger" >
+            Удалить 
+          </button>
+        </div>
+      {{!-- </div> --}}
+    </div>
+  </div>
+</div>
+{{outlet}}
