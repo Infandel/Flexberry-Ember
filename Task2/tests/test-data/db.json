@@ -132,5 +132,28 @@
       "meetingId": 9,
       "id": 12
     }
+  ],
+  "users": [
+    {
+      "email": "a@a.ru",
+      "username": "a",
+      "password": "3c1efb017ea632c6ff5fab2bf62cdcd8c5cf667bdcdc5b25b4c44e16770f1064",
+      "passwordConfirmation": "3c1efb017ea632c6ff5fab2bf62cdcd8c5cf667bdcdc5b25b4c44e16770f1064",
+      "id": 1
+    },
+    {
+      "email": "b@b.ru",
+      "username": "dummy",
+      "password": "97786f8c2e7e07a0a05a6685aa3d2f532d42753728f69ce8e20a5c09c67f498a",
+      "passwordConfirmation": "97786f8c2e7e07a0a05a6685aa3d2f532d42753728f69ce8e20a5c09c67f498a",
+      "id": 2
+    },
+    {
+      "email": "c@c.com",
+      "username": "test",
+      "password": "21132dde0c9a9840a1abe82a58492a0ee3c528995abb4c79908232bcede7c92c",
+      "passwordConfirmation": "21132dde0c9a9840a1abe82a58492a0ee3c528995abb4c79908232bcede7c92c",
+      "id": 3
+    }
   ]
 }

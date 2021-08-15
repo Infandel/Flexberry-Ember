@@ -43,6 +43,5 @@ export default Component.extend({
       book: this.get('report.book'),
       meeting: this.get('report.meeting'),
     });
-    debugger
   }
 });
