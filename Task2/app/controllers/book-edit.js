@@ -7,7 +7,7 @@ export default Controller.extend({
         this.get('model').setProperties(book)
         await this.get('model').save();
 
-        this.transitionToRoute('book.index');
+        this.transitionToRoute('book');
       }
       catch(e){
         this.send('error', e);

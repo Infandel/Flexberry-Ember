@@ -7,9 +7,11 @@
 						{{input type="text" value=search class="form-control mr-2 search-only" placeholder="Поиск по названию книги, автору и тэгам"}}
             <p></p>
             {{input type="text" value=searchByTag class="form-control mr-2 search-only" placeholder="Поиск по тэгам"}}
-            {{#link-to "book-create" class="btn btn-outline-primary my-2"}}
-						  Добавить Книгу
-					  {{/link-to}}
+            {{#if this.session.isAuthenticated}}
+              {{#link-to "book-create" class="btn btn-outline-primary my-2"}}
+                Добавить Книгу
+              {{/link-to}}
+            {{/if}}
 					</div>          
 				</div>
 			</div>

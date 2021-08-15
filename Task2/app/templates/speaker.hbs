@@ -5,9 +5,11 @@
 				<div class="col-md-auto">
 					<div class="form-group row">
 						{{input type="text" value=search class="form-control mr-2 search-long search-only" placeholder="Поиск по ФИО"}}
-            {{#link-to "speaker-create" class="btn btn-outline-primary my-2"}}
-						  Добавить Спикера
-					  {{/link-to}}
+            {{#if session.isAuthenticated}}
+              {{#link-to "speaker-create" class="btn btn-outline-primary my-2"}}
+                Добавить Спикера
+              {{/link-to}}
+            {{/if}}
 					</div>          
 				</div>
 			</div>

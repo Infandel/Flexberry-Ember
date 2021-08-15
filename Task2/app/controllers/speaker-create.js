@@ -7,7 +7,7 @@ export default Controller.extend({
         let newSpeaker = this.get('store').createRecord('speaker', speaker)
         await newSpeaker.save();
 
-        this.transitionToRoute('speaker.index');
+        this.transitionToRoute('speaker');
       }
       catch(e){
         this.send('error', e);

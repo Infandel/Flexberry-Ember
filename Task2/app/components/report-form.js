@@ -2,6 +2,7 @@ import Component from '@ember/component';
 import { inject as service } from '@ember/service';
 
 export default Component.extend({
+  currentUser: service(),
   store: service(),
   actions: {
     saveReport(e){
@@ -15,6 +16,7 @@ export default Component.extend({
         speaker: this.get('speaker'),
         book: this.get('book'),
         meeting: this.get('meeting'),
+        user: this.get('currentUser.user')
       });
     },
 

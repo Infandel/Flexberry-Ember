@@ -3,11 +3,13 @@
   <div class="htop">
     <h2 class="text-center">Встречи клуба</h2>
     <div class="form-row navbar-panel justify-content-between align-items-end">
-      <div class="col-md-1">
-        {{#link-to "meeting-create" class="btn btn-outline-primary my-2"}}
-          Добавить встречу
-        {{/link-to}}
-      </div>
+      {{#if session.isAuthenticated}}
+        <div class="col-md-1">
+          {{#link-to "meeting-create" class="btn btn-outline-primary my-2"}}
+            Добавить встречу
+          {{/link-to}}
+        </div>
+      {{/if}}
       <div class="col-md-3">
         <h5>Спикер</h5>
         <div class="dropdown">
@@ -63,11 +65,13 @@
           </h5>            
         </div>
         <div class="col-md-auto">
-          {{#link-to "meeting-edit" meeting.id}}
-          <button type="button" class="btn btn-outline-primary" >
-            Редактировать дату встречи или добавить доклад
-          </button>
-          {{/link-to}}
+          {{#if (can "edit meeting" meeting)}}
+            {{#link-to "meeting-edit" meeting.id}}
+            <button type="button" class="btn btn-outline-primary" >
+              Редактировать дату встречи или добавить доклад
+            </button>
+            {{/link-to}}
+          {{/if}}
         </div>
       </div>
       <h4>Список докладов</h4>

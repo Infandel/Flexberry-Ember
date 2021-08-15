@@ -7,7 +7,7 @@ export default Controller.extend({
         this.get('model').setProperties(speaker)
         await this.get('model').save();
 
-        this.transitionToRoute('speaker.index');
+        this.transitionToRoute('speaker');
       }
       catch(e){
         this.send('error', e);

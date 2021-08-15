@@ -29,6 +29,13 @@
       "surname": "Octavian",
       "patronymic": "Bladed",
       "id": 10
+    },
+    {
+      "name": "Joe",
+      "surname": "Flaming",
+      "patronymic": "Fist",
+      "userId": 6,
+      "id": 11
     }
   ],
   "books": [
@@ -97,6 +104,20 @@
         "content"
       ],
       "id": 7
+    },
+    {
+      "title": "Flow Over the River",
+      "author": "Dan Spacetime",
+      "pagesCount": 160,
+      "coverURL": "",
+      "descriURL": "https://guides.emberjs.com/v3.3.0/object-model/computed-properties/",
+      "tags": [
+        "space",
+        "cruise",
+        "awesome"
+      ],
+      "userId": 6,
+      "id": 8
     }
   ],
   "meetings": [
@@ -107,6 +128,11 @@
     {
       "meetingDate": "2021-08-03T19:00:00.000Z",
       "id": 9
+    },
+    {
+      "meetingDate": "2021-07-06T19:00:00.000Z",
+      "userId": 6,
+      "id": 10
     }
   ],
   "reports": [
@@ -131,6 +157,18 @@
       "bookId": 3,
       "meetingId": 9,
       "id": 12
+    },
+    {
+      "reportDate": "07.07.2021",
+      "bookScore": 3,
+      "presentationURL": "https://guides.emberjs.com/v3.3.0/object-model/computed-properties/",
+      "videoURL": "https://getbootstrap.com/docs/4.0/components/navbar/",
+      "review": "Awesome!",
+      "speakerId": 11,
+      "bookId": 3,
+      "meetingId": 10,
+      "userId": 6,
+      "id": 13
     }
   ],
   "users": [
@@ -154,6 +192,27 @@
       "password": "21132dde0c9a9840a1abe82a58492a0ee3c528995abb4c79908232bcede7c92c",
       "passwordConfirmation": "21132dde0c9a9840a1abe82a58492a0ee3c528995abb4c79908232bcede7c92c",
       "id": 3
+    },
+    {
+      "email": "wrong",
+      "username": "",
+      "password": "361609e559c8532927aca2f5d0698345fcddaf1e4f2240466747069fdbb3ba5c",
+      "passwordConfirmation": "361609e559c8532927aca2f5d0698345fcddaf1e4f2240466747069fdbb3ba5c",
+      "id": 4
+    },
+    {
+      "email": "b@b.ru",
+      "username": "dummy2",
+      "password": "97786f8c2e7e07a0a05a6685aa3d2f532d42753728f69ce8e20a5c09c67f498a",
+      "passwordConfirmation": "97786f8c2e7e07a0a05a6685aa3d2f532d42753728f69ce8e20a5c09c67f498a",
+      "id": 5
+    },
+    {
+      "email": "admin@admin.ru",
+      "username": "admin",
+      "password": "2055e2e1319757539c899d2f32038e41094eb593317524c503132c60f52bb6ff",
+      "passwordConfirmation": "2055e2e1319757539c899d2f32038e41094eb593317524c503132c60f52bb6ff",
+      "id": 6
     }
   ]
 }

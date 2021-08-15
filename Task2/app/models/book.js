@@ -10,6 +10,7 @@ export default DS.Model.extend({
   tags: DS.attr(),
 
   reports: DS.hasMany('report'),
+  user: DS.belongsTo('user'),
 
 
   averageBookScore: computed('reports.@each.bookScore', function() {

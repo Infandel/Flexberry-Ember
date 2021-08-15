@@ -7,7 +7,7 @@ export default Controller.extend({
         let newBook = this.get('store').createRecord('book', book)
         await newBook.save();
 
-        this.transitionToRoute('book.index');
+        this.transitionToRoute('book');
       }
       catch(e){
         this.send('error', e);
