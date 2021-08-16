@@ -7,15 +7,15 @@
     {{/if}}
     <div class="card-body">
       <h3 class="card-title text-center">
-        Книга: {{model.title}}       
+        {{t "books.title"}}: {{model.title}}       
       </h3>
       <h6 class="card-subtitle mb-2 text-left">
-        <p>Автор: {{model.author}}</p>
-        <p>Количество страниц: {{model.pagesCount}}</p>
-        <p>Ссылка на обложку: <a href={{model.coverURL}} class="link-warning">{{model.coverURL}}</a></p>
-        <p>Ссылка на описание: <a href={{model.descriURL}} class="link-warning">{{model.descriURL}}</a></p>
-        <p>Средняя оценка книги: {{model.averageBookScore}}</p>
-        <p>Тэги: 
+        <p>{{t "books.author"}}: {{model.author}}</p>
+        <p>{{t "books.pagesCount"}}: {{model.pagesCount}}</p>
+        <p>{{t "books.coverURL"}}: <a href={{model.coverURL}} class="link-warning">{{model.coverURL}}</a></p>
+        <p>{{t "books.descriURL"}}: <a href={{model.descriURL}} class="link-warning">{{model.descriURL}}</a></p>
+        <p>{{t "books.avgBookScore"}}: {{model.averageBookScore}}</p>
+        <p>{{t "books.tags"}}: 
         {{#each model.tags as |tag|}}
           #{{tag}}
         {{/each}}
@@ -23,11 +23,11 @@
       </h6>
     </div>
     <div class="card-footer">
-      <h4 class="text-center">Список выступлений:</h4>
+      <h4 class="text-center">{{t "books.reportsList"}}:</h4>
       <ul class="list-group">
         {{#each model.reports as |report|}}
           <il class="list-group-item">
-            {{report.reportDate}}: <a href={{report.videoURL}}>Ccылка на выступление</a>
+            {{report.reportDate}}: <a href={{report.videoURL}}>{{t "books.reportURL"}}</a>
           </il>
         {{/each}}
       </ul>
@@ -36,16 +36,16 @@
       {{!-- <div class="row"> --}}
         <div class="text-left">
           {{#link-to "book" class="btn btn-outline-primary"}}
-            Вернуться
+            {{t "buttons.back"}}
           {{/link-to}}
         </div>
         {{#if (can "edit book" model)}}
           <div class="text-right">
             {{#link-to "book-edit" model.id class="btn btn-outline-primary"}}
-              Редактировать
+              {{t "buttons.edit"}}
             {{/link-to}}
             <button type="button" onclick={{ action "deleteBook" model }} class="btn btn-outline-danger" >
-              Удалить 
+              {{t "buttons.delete"}} 
             </button>
           </div>
         {{/if}}

@@ -9,14 +9,14 @@
             {{input type="text" value=searchByTag class="form-control mr-2 search-only" placeholder="Поиск по тэгам"}}
             {{#if this.session.isAuthenticated}}
               {{#link-to "book-create" class="btn btn-outline-primary my-2"}}
-                Добавить Книгу
+                {{t "books.addBook"}}
               {{/link-to}}
             {{/if}}
 					</div>          
 				</div>
 			</div>
 
-      <h2 class="text-center">Книги</h2>
+      <h2 class="text-center">{{t "books.books"}}</h2>
         <div class="row row-cols-1 row-cols-md-3">
           {{#each model as |book|}}
           <div class="col mb-4">
