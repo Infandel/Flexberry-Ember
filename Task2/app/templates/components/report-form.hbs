@@ -8,35 +8,35 @@
   </div> --}}
 
   <div class="form-group">
-    <label>Выберите Книгу</label>
+    <label>{{t "reports.chooseBook"}}</label>
       {{#power-select searchEnabled=true searchField="title" onchange=(action (mut book)) selected=book search=(action "searchBook") as |book|}}
         {{book.title}}
       {{/power-select}}
   </div>
 
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Оценка книги:</label>
+    <label class="col-sm-2 col-form-label">{{t "reports.bookScore"}}:</label>
     <div class="col-sm-10">
       {{input type="number" value=bookScore class="form-control form-control-lg" placeholder="Оцените книгу (от 1 до 5)"}}
     </div>
   </div>
 
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Ссылка на презентацию:</label>
+    <label class="col-sm-2 col-form-label">{{t "reports.presentationURL"}}:</label>
     <div class="col-sm-10">
       {{input type="url" value=presentationURL class="form-control form-control-lg" placeholder="Н-р: http://www.presentation.com"}}
     </div>
   </div>
 
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Ссылка на видео:</label>
+    <label class="col-sm-2 col-form-label">{{t "reports.videoURL"}}:</label>
     <div class="col-sm-10">
       {{input type="url" value=videoURL class="form-control form-control-lg" placeholder="Н-р: http://www.video.com"}}
     </div>
   </div>  
 
   <div class="form-group">
-    <label>Выберите Спикера</label>
+    <label>{{t "reports.chooseSpeaker"}}</label>
       {{#power-select searchEnabled=true onchange=(action (mut speaker)) selected=speaker search=(action "searchSpeaker") as |speaker|}}
         {{speaker.surname}} {{speaker.name}} {{speaker.patronymic}}
       {{/power-select}}
@@ -50,7 +50,7 @@
   </div> --}}
 
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Рецензия:</label>
+    <label class="col-sm-2 col-form-label">{{t "reports.review"}}:</label>
     <div class="col-sm-10">
       {{textarea type="text" rows="6" value=review class="form-control form-control-lg" placeholder="Напишите отзыв о книге"}}
     </div>
@@ -58,10 +58,10 @@
 
   <div class="form-group row">
     <div class="col-6">
-      <button type="submit" class="btn btn-outline-primary btn-lg">Сохранить</button>
+      <button type="submit" class="btn btn-outline-primary btn-lg">{{t "buttons.save"}}</button>
     </div>
     <div class="col-6 text-right">
-      {{#link-to "meeting-edit" meeting.id class="btn btn-outline-secondary btn-lg" }}Отмена{{/link-to}}
+      {{#link-to "meeting-edit" meeting.id class="btn btn-outline-secondary btn-lg" }}{{t "buttons.cancel"}}{{/link-to}}
     </div>
 	</div>
 

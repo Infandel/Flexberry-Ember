@@ -1,7 +1,7 @@
 {{#link-to "book-detail" bookId}}
-  <p>Название: {{title}}</p>
-  <p>Автор: {{author}}</p>
-  <p>Тэги: 
+  <p>{{t 'books.title'}}: {{title}}</p>
+  <p>{{t 'books.author'}}: {{author}}</p>
+  <p>{{t 'books.tags'}}: 
     {{#each tags as |tag|}}
       #{{tag}}
     {{/each}}

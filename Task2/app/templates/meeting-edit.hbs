@@ -1,25 +1,25 @@
 <div class="container h-100">
   <div class="htop">
-    <h3 class="text-center">Редактирование встречи за</h3>
+    <h3 class="text-center">{{t "meetings.editMeetingFor"}}</h3>
       <h4 class="text-center">{{model.meetingDate}}</h4>
     {{meeting-form meeting=model onsubmit=(action "saveMeeting")}}
   </div>
   <div class="form-group row">
     <div class="col-6">
-      <button type="button" onclick={{ action "deleteMeeting" }} class="btn btn-outline-danger" >Удалить встречу</button>
+      <button type="button" onclick={{ action "deleteMeeting" }} class="btn btn-outline-danger" >{{t "meetings.deleteMeeting"}}</button>
     </div>
     <div class="col-6 text-right">
-      {{#link-to "report-create" model.id class="btn btn-outline-secondary btn-lg" }}Добавить доклад{{/link-to}}
+      {{#link-to "report-create" model.id class="btn btn-outline-secondary btn-lg" }}{{t "reports.addReport"}}{{/link-to}}
     </div>
 	</div>
   <div class="card-footer">
-    <h4 class="text-center">Список выступлений:</h4>
+    <h4 class="text-center">{{t "reports.reportsList"}}:</h4>
     <ul class="list-group">
       {{#each model.reports as |report|}}
         <il class="list-group-item">
-          {{report.reportDate}}: <a href={{report.videoURL}}>Ccылка на выступление</a>
+          {{report.reportDate}}: <a href={{report.videoURL}}>{{t "reports.reportURL"}}</a>
           {{#link-to "report-edit" report.id class="btn btn-outline-primary" }}
-            Редактировать выступление
+            {{t "reports.reportEdit"}}
           {{/link-to}}
         </il>
       {{/each}} 

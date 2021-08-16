@@ -1,53 +1,53 @@
 <form onsubmit={{action "submitForm"}} class="edit-form">
 
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Название:</label>
+    <label class="col-sm-2 col-form-label">{{t 'books.title'}}:</label>
     <div class="col-sm-10">
-      {{input type="text" value=title class="form-control form-control-lg" placeholder="Полное название книги"}}
+      {{input type="text" value=title class="form-control form-control-lg" placeholder=(t 'book.placeholder.title')}}
     </div>
   </div>
 
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Автор:</label>
+    <label class="col-sm-2 col-form-label">{{t 'books.author'}}:</label>
     <div class="col-sm-10">
-      {{input type="text" value=author class="form-control form-control-lg" placeholder="Фамилия И.О. автора"}}
+      {{input type="text" value=author class="form-control form-control-lg" placeholder=(t 'book.placeholder.author')}}
     </div>
   </div>
 
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Объем:</label>
+    <label class="col-sm-2 col-form-label">{{t 'books.pagesCount'}}:</label>
     <div class="col-sm-10">
-      {{input type="number" value=pagesCount class="form-control form-control-lg" placeholder="Количество страниц книги"}}
+      {{input type="number" value=pagesCount class="form-control form-control-lg" placeholder=(t 'books.placeholder.pageCount')}}
     </div>
   </div>
 
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Ссылка на обложку:</label>
+    <label class="col-sm-2 col-form-label">{{t 'books.coverURL'}}:</label>
     <div class="col-sm-10">
-      {{input type="url" value=coverURL class="form-control form-control-lg" placeholder="Н-р: http://www.example.jpg"}}
+      {{input type="url" value=coverURL class="form-control form-control-lg" placeholder=(t 'books.placeholder.coverURL')}}
     </div>
   </div>
 
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Ссылка на описание:</label>
+    <label class="col-sm-2 col-form-label">{{t 'books.descriURL'}}:</label>
     <div class="col-sm-10">
-      {{input type="url" value=descriURL class="form-control form-control-lg" placeholder="Н-р: http://www.example.com"}}
+      {{input type="url" value=descriURL class="form-control form-control-lg" placeholder=(t 'books.placeholder.descriURL')}}
     </div>
   </div>
 
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Теги:</label>
+    <label class="col-sm-2 col-form-label">{{t 'books.tags'}}:</label>
     <div class="col-sm-10">
-      {{input type="text" value=tags class="form-control form-control-lg" placeholder="#Теги через запятую"}}
+      {{input type="text" value=tags class="form-control form-control-lg" placeholder=(t 'books.placeholder.tags')}}
     </div>
   </div>
 
   <div class="form-group row">
     <div class="col-6">
-      <button type="submit" class="btn btn-outline-primary btn-lg">Сохранить</button>
+      <button type="submit" class="btn btn-outline-primary btn-lg">{{t "buttons.save"}}</button>
     </div>
     <div class="col-6 text-right">
-      {{#link-to "book" class="btn btn-outline-secondary btn-lg" }}Отмена{{/link-to}}
+      {{#link-to "book" class="btn btn-outline-secondary btn-lg" }}{{t "buttons.cancel"}}{{/link-to}}
     </div>
 	</div>
 

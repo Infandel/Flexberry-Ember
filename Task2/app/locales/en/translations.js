@@ -37,6 +37,7 @@ export default {
     passwordDescription: 'Password and password confirmation',
     passwordDontMatch: 'do not match'
   },
+
   menu: {
     logo: 'Book club',
     desktop: 'Desktop',
@@ -51,8 +52,10 @@ export default {
     login: 'Login',
     logout: 'Log out'
   },
+
   books: {
     books: 'Books',
+    book: 'Book',
     addBook: 'Add book',
     editBook: 'Edit book',
     title: 'Title',
@@ -62,13 +65,93 @@ export default {
     descriURL: 'Link to description',
     tags: 'Tags',
     avgBookScore: 'Average book score',
+    
+    placeholder: {
+      searchByTag: 'Search by tags',
+      searchAll: 'Search by title, author or tags',
+      author: 'Author credentials',
+      title: 'Book title',
+      pagesCount: '1 or 2 or 150 etc.',
+      coverURL: 'For example: https://www.google.jpg',
+      descriURL: 'For example: https://www.google.com/',
+      tags: 'awesome,new,nature',
+    }     
+  },
+
+  speakers: {
+    addSpeaker: 'Add speaker',
+    speakers: 'Speakers',
+    speaker: 'Speaker',
+    editSpeaker: 'Edit speaker',
+    name: 'Name',
+    surname: 'Surname',
+    patronymic: 'Patronymic',
+
+    placeholder: {
+      searchByCreds: 'Search by credentials',
+      name: 'Enter Name',
+      surname: 'Enter Surname',
+      patronymic: 'Enter Patronymic',
+    }
+  },
+
+  reports: {
     reportsList: 'Reports list',
     reportURL: 'Link to the report',
-     
+    reportInfo: 'Report information',
+    reportEdit: 'Edit report',
+    editReportFor: 'Edit Report For',
+    addReportFor: 'Add Report For',
+    addReport: 'Add Report',
+    reportFor: 'Report for',
+    bookScore: 'Book Score',
+    outOf5: 'out of 5',
+    presentationURL: 'Link to presentation',
+    videoURL: 'Link to video',
+    review: 'Review',
+    speaker: 'Speaker',
+    forBook: 'For Book',
+    chooseBook: 'Select a book',
+    chooseSpeaker: 'Select a speaker',
+    
+    placeholder: {
+      bookScore: 'Rate a book (from 1 to 5)',
+      presentationURL: 'Example: http://www.presentation.com',
+      videoURL: 'Example: http://www.video.com',
+      review: 'Write a review about the book',
+
+    }
   },
+
+  meetings: {
+    addMeeting: 'Add meeting',
+    meetingDate: 'Meeting date',
+    editMeetingFor: 'Edit meeting for',
+    addMeetingDateOrEditReport: 'Edit meeting date or add new report',
+    deleteMeeting: 'Delete meeting',
+    usefulLinks: 'Useful links',
+    watchReportRecord: 'View the recording of the report',
+    dlPresentation: 'Download presentation',
+    clubMeetings: 'Club Meetings',
+    chooseDate: "Choose a date",
+
+    placeholder: {
+      date: "Date..."
+    },    
+  },
+
+  register: {
+    username: 'Username',
+    email: 'Email',
+    password: 'Password',
+    passwordConfirm: 'Confirm password',
+       
+  },
+  
   buttons:{
     back: 'Back',
     edit: 'Edit',
+    save: 'Save',
     delete: 'Delete',
     cancel: 'Cancel'
   }

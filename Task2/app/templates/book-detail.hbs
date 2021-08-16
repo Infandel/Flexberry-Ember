@@ -23,11 +23,11 @@
       </h6>
     </div>
     <div class="card-footer">
-      <h4 class="text-center">{{t "books.reportsList"}}:</h4>
+      <h4 class="text-center">{{t "reports.reportsList"}}:</h4>
       <ul class="list-group">
         {{#each model.reports as |report|}}
           <il class="list-group-item">
-            {{report.reportDate}}: <a href={{report.videoURL}}>{{t "books.reportURL"}}</a>
+            {{report.reportDate}}: <a href={{report.videoURL}}>{{t "reports.reportURL"}}</a>
           </il>
         {{/each}}
       </ul>

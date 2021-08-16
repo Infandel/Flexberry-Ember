@@ -4,9 +4,9 @@
 			<div class="form-row navbar-panel justify-content-between">
 				<div class="col-md-auto">
 					<div class="form-group row justify-content-between">
-						{{input type="text" value=search class="form-control mr-2 search-only" placeholder="Поиск по названию книги, автору и тэгам"}}
+						{{input type="text" value=search class="form-control mr-2 search-only" placeholder=(t 'books.placeholder.searchAll')}}
             <p></p>
-            {{input type="text" value=searchByTag class="form-control mr-2 search-only" placeholder="Поиск по тэгам"}}
+            {{input type="text" value=searchByTag class="form-control mr-2 search-only" placeholder=(t 'books.placeholder.searchByTag')}}
             {{#if this.session.isAuthenticated}}
               {{#link-to "book-create" class="btn btn-outline-primary my-2"}}
                 {{t "books.addBook"}}

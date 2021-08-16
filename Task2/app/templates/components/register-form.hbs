@@ -1,9 +1,9 @@
 <form onsubmit={{action "saveUser"}} class="edit-form">
 
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Электронная почта:</label>
+    <label class="col-sm-2 col-form-label">{{t "register.email"}}:</label>
     <div class="col-sm-10">
-      {{input type="text" value=email class="form-control form-control-lg" placeholder="Электронная почта"}}
+      {{input type="text" value=email class="form-control form-control-lg" placeholder=(t "register.email")}}
     </div>
     <div class="col-sm-10">
       {{#each errors.email as |error|}}
@@ -13,9 +13,9 @@
   </div>
 
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Имя пользователя:</label>
+    <label class="col-sm-2 col-form-label">{{t "register.username"}}:</label>
     <div class="col-sm-10">
-      {{input type="text" value=username class="form-control form-control-lg" placeholder="Имя пользователя"}}
+      {{input type="text" value=username class="form-control form-control-lg" placeholder=(t "register.username")}}
       
       {{#each errors.username as |error|}}
         <span class="alert alert-danger">{{error.message}}</span>
@@ -24,9 +24,9 @@
   </div>
 
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Пароль:</label>
+    <label class="col-sm-2 col-form-label">{{t "register.password"}}:</label>
     <div class="col-sm-10">
-      {{input type="password" value=password class="form-control form-control-lg" placeholder="Пароль"}}
+      {{input type="password" value=password class="form-control form-control-lg" placeholder=(t "register.password")}}
       
       {{#each errors.password as |error|}}
         <span class="alert alert-danger">{{error.message}}</span>
@@ -35,9 +35,9 @@
   </div>
 
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Подтверждение пароля:</label>
+    <label class="col-sm-2 col-form-label">{{t "register.passwordConfirm"}}</label>
     <div class="col-sm-10">
-      {{input type="password" value=passwordConfirmation class="form-control form-control-lg" placeholder="Подтвердите Пароль"}}
+      {{input type="password" value=passwordConfirmation class="form-control form-control-lg" placeholder=(t "register.passwordConfirm")}}
       
       {{#each errors.passwordConfirmation as |error|}}
         <span class="alert alert-danger">{{error.message}}</span>
@@ -49,10 +49,10 @@
 
   <div class="form-group row">
     <div class="col-6">
-      <button type="submit" class="btn btn-outline-primary btn-lg">Сохранить</button>
+      <button type="submit" class="btn btn-outline-primary btn-lg">{{t "buttons.save"}}</button>
     </div>
     <div class="col-6 text-right">
-      {{#link-to "index" class="btn btn-outline-secondary btn-lg" }}Отмена{{/link-to}}
+      {{#link-to "index" class="btn btn-outline-secondary btn-lg" }}{{t "buttons.cancel"}}{{/link-to}}
     </div>
 	</div>
   

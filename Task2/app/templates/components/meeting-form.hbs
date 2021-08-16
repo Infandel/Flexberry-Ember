@@ -1,18 +1,18 @@
 <form onsubmit={{action "saveMeeting"}} class="edit-form">
 
   <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Выберите дату:</label>
+    <label class="col-sm-2 col-form-label">{{t "meetings.chooseDate"}}:</label>
     <div class="col-sm-10">
-      {{input type="date" value=meetingDate class="form-control form-control-lg" placeholder="Выберите дату"}}
+      {{input type="date" value=meetingDate class="form-control form-control-lg" placeholder=(t "meetings.chooseDate")}}
     </div>
   </div>
 
   <div class="form-group row">
     <div class="col-6">
-      <button type="submit" class="btn btn-outline-primary btn-lg">Сохранить</button>
+      <button type="submit" class="btn btn-outline-primary btn-lg">{{t "buttons.save"}}</button>
     </div>
     <div class="col-6 text-right">
-      {{#link-to "meeting" class="btn btn-outline-secondary btn-lg" }}Отмена{{/link-to}}
+      {{#link-to "meeting" class="btn btn-outline-secondary btn-lg" }}{{t "buttons.cancel"}}{{/link-to}}
     </div>
 	</div>
   

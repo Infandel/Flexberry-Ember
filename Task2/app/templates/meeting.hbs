@@ -1,48 +1,48 @@
 {{outlet}}
 <div class="container h-100">
   <div class="htop">
-    <h2 class="text-center">Встречи клуба</h2>
+    <h2 class="text-center">{{t "meetings.clubMeetings"}}</h2>
     <div class="form-row navbar-panel justify-content-between align-items-end">
       {{#if session.isAuthenticated}}
         <div class="col-md-1">
           {{#link-to "meeting-create" class="btn btn-outline-primary my-2"}}
-            Добавить встречу
+            {{t "meetings.addMeeting"}}
           {{/link-to}}
         </div>
       {{/if}}
       <div class="col-md-3">
-        <h5>Спикер</h5>
+        <h5>{{t "speakers.speaker"}}</h5>
         <div class="dropdown">
           <button class="btn btn-outline-secondary dropdown-toggle my-2 w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span>Спикер...</span>
+            <span>{{t "speakers.speaker"}}...</span>
             <span class="caret"></span>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Фамилия имя</a>
-            <a class="dropdown-item" href="#">Фамилия имя</a>
-            <a class="dropdown-item" href="#">Фамилия имя</a>
+            <a class="dropdown-item" href="#">{{t "speakers.surname"}} {{t "speakers.name"}}</a>
+            <a class="dropdown-item" href="#">{{t "speakers.surname"}} {{t "speakers.name"}}</a>
+            <a class="dropdown-item" href="#">{{t "speakers.surname"}} {{t "speakers.name"}}</a>
           </div>
           </div>
       </div>
       <div class="col-md-3">
-        <h5>Книга</h5>
+        <h5>{{t "books.book"}}</h5>
         <div class="dropdown">
           <button class="btn btn-outline-secondary dropdown-toggle my-2 w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span>Книга...</span>
+            <span>{{t "books.book"}}...</span>
             <span class="caret"></span>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Название книги</a>
-            <a class="dropdown-item" href="#">Название книги</a>
-            <a class="dropdown-item" href="#">Название книги</a>
+            <a class="dropdown-item" href="#">{{t "books.title"}}</a>
+            <a class="dropdown-item" href="#">{{t "books.title"}}</a>
+            <a class="dropdown-item" href="#">{{t "books.title"}}</a>
           </div>
           </div>
       </div>
       <div class="col-md-3">
-        <h5>Дата встречи</h5>
+        <h5>{{t "meetings.meetingDate"}}</h5>
         <div class="form-group py-2 my-0">
           <div class="datepicker date input-group p-0 w-100">
-            {{ input type="text" value=search class="form-control" placeholder="Дата..." }}
+            {{ input type="text" value=search class="form-control" placeholder=(t 'meetings.placeholder.date') }}
             <div class="input-group-append">
               <span class="input-group-text px-4">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clock" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +57,7 @@
     </div>
     {{#each model as |meeting|}} 
     <div class="border border-dark rounded p-4 mb-4">
-      <h4>Дата встречи</h4>
+      <h4>{{t "meetings.meetingDate"}}</h4>
       <div class="row h-100 justify-content-between mb-4">
         <div class="col-md-auto">
           <h5>
@@ -68,50 +68,50 @@
           {{#if (can "edit meeting" meeting)}}
             {{#link-to "meeting-edit" meeting.id}}
             <button type="button" class="btn btn-outline-primary" >
-              Редактировать дату встречи или добавить доклад
+              {{t "meetings.editMeetingDateOrAddReport"}}
             </button>
             {{/link-to}}
           {{/if}}
         </div>
       </div>
-      <h4>Список докладов</h4>
+      <h4>{{t "reports.reportsList"}}</h4>
       {{#each meeting.reports as |report|}}
       <ul class="list-group">
         <li class="list-group-item">
           {{#link-to "report-detail" report.id class="btn btn-outline-primary"}}
-            Информация о докладе
+            {{t "reports.reportInfo"}}
           {{/link-to}}
           <div class="row h-100 justify-content-between">
             <div class="col-md-2 text-center">
-              <h5 class="py-2">Спикер</h5>
+              <h5 class="py-2">{{t "speakers.speaker"}}</h5>
               <img src="/images/speaker.jpg" class="rounded w-100" alt="Спикер">
               <p>{{report.speaker.surname}} {{report.speaker.name}}</p>
             </div>
             <div class="col-md-2 text-center">
-              <h5 class="py-2">Книга:</h5>
+              <h5 class="py-2">{{t "books.title"}}:</h5>
               <p>{{report.book.title}}</p>
-              <h5 class="py-2">Автор:</h5>
+              <h5 class="py-2">{{t "books.author"}}:</h5>
               <p>{{report.book.author}}</p>
               <div class="text-center">
-                <h5>Оценка:</h5>
+                <h5>{{t "reports.bookScore"}}:</h5>
                 <div class="col p-0">
-                  {{report.bookScore}} из 5
+                  {{report.bookScore}} {{t "reports.outOf5"}}
                 </div>
               </div>
             </div>
             <div class="col-md-6">
-              <h5 class="text-center py-2">Отзыв:</h5>
+              <h5 class="text-center py-2">{{t "reports.review"}}:</h5>
               <p>
                 {{report.review}}
               </p>
             </div>
             <div class="row-md-2 text-center row-filter">
-              <h5 class="py-2">Ссылки:</h5>
-              <a href={{report.presentationURL}} class="btn btn-outline-primary" title="Посмотреть запись доклада">
-                Посмотреть запись доклада
+              <h5 class="py-2">{{t "meetings.usefulLinks"}}:</h5>
+              <a href={{report.presentationURL}} class="btn btn-outline-primary" title={{t "meetings.watchReportRecord"}}>
+                {{t "meetings.watchReportRecord"}}
               </a>
-              <a href={{report.videoURL}} class="btn btn-outline-success" title="Скачать презентацию">
-                Скачать презентацию
+              <a href={{report.videoURL}} class="btn btn-outline-success" title={{t "meetings.dlPresentation"}}>
+                {{t "meetings.dlPresentation"}}
               </a>
             </div>
           </div>

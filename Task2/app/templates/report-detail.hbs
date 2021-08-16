@@ -2,35 +2,35 @@
   <div class="card">
   <div class="card-body">
     <h3 class="card-title text-center">
-      Доклад за: {{model.reportDate}}       
+      {{t "reports.reportFor"}}: {{model.reportDate}}       
     </h3>
     <h6 class="card-subtitle mb-2 text-left">
-      <p>Оценка книги: {{model.bookScore}}</p>
-      <label>Ссылка на презентацию:</label> 
+      <p>{{t "reports.bookScore"}}: {{model.bookScore}}</p>
+      <label>{{t "reports.presentationURL"}}:</label> 
         <p>{{model.presentationURL}}</p>
-      <label>Ссылка на видео:</label>
+      <label>{{t "reports.videoURL"}}:</label>
         <p>{{model.videoURL}}</p>
-      <label>Отзыв: </label>
+      <label>{{t "reports.review"}}: </label>
         <p>{{model.review}}</p>
-      <label>Докладчик: </label>
+      <label>{{t "reports.speaker"}}: </label>
         <p>{{model.speaker.surname}} {{model.speaker.name}}</p>
-      <label>По книге: </label>
+      <label>{{t "reports.forBook"}}: </label>
         <p>{{model.book.title}}</p>
     </h6>
   </div>
   <div class="card-footer">
       <div class="text-left">
         {{#link-to "meeting" class="btn btn-outline-primary"}}
-          Вернуться
+          {{t "buttons.back"}}
         {{/link-to}}
       </div>
       {{#if (can "edit report" model)}}
         <div class="text-right">
           {{#link-to "report-edit" model.id class="btn btn-outline-primary"}}
-            Редактировать
+            {{t "buttons.edit"}}
           {{/link-to}}
           <button type="button" onclick={{ action "deleteReport" model }} class="btn btn-outline-danger" >
-            Удалить 
+            {{t "buttons.delete"}} 
           </button>
         </div>
       {{/if}}
