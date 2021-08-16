@@ -1,47 +1,66 @@
 <form onsubmit={{action "saveUser"}} class="edit-form">
 
-  <div class="form-group row">
+  <div class="form-group">
     <label class="col-sm-2 col-form-label">{{t "register.email"}}:</label>
     <div class="col-sm-10">
       {{input type="text" value=email class="form-control form-control-lg" placeholder=(t "register.email")}}
     </div>
     <div class="col-sm-10">
-      {{#each errors.email as |error|}}
-        <span class="alert alert-danger">{{error.message}}</span>
-      {{/each}}
+      {{#if showError}}
+        {{#if (v-get this 'email' 'isInvalid')}}
+          <span class="text-danger">
+            {{v-get this 'email' 'message'}}
+          </span>
+        {{/if}}
+      {{/if}}
     </div>
   </div>
 
-  <div class="form-group row">
+  <div class="form-group">
     <label class="col-sm-2 col-form-label">{{t "register.username"}}:</label>
     <div class="col-sm-10">
       {{input type="text" value=username class="form-control form-control-lg" placeholder=(t "register.username")}}
-      
-      {{#each errors.username as |error|}}
-        <span class="alert alert-danger">{{error.message}}</span>
-      {{/each}}
+    </div>
+    <div class="col-sm-10">
+      {{#if showError}}
+        {{#if (v-get this 'username' 'isInvalid')}}
+          <span class="text-danger">
+            {{v-get this 'username' 'message'}}
+          </span>
+        {{/if}}
+      {{/if}}
     </div>
   </div>
 
-  <div class="form-group row">
+  <div class="form-group">
     <label class="col-sm-2 col-form-label">{{t "register.password"}}:</label>
     <div class="col-sm-10">
       {{input type="password" value=password class="form-control form-control-lg" placeholder=(t "register.password")}}
-      
-      {{#each errors.password as |error|}}
-        <span class="alert alert-danger">{{error.message}}</span>
-      {{/each}}
+    </div>
+    <div class="col-sm-10">
+      {{#if showError}}
+        {{#if (v-get this 'password' 'isInvalid')}}
+          <span class="text-danger">
+            {{v-get this 'password' 'message'}}
+          </span>
+        {{/if}}
+      {{/if}}
     </div>
   </div>
 
-  <div class="form-group row">
-    <label class="col-sm-2 col-form-label">{{t "register.passwordConfirm"}}</label>
+  <div class="form-group">
+    <label class="col-sm-2 col-form-label">{{t "register.passwordConfirm"}}:</label>
     <div class="col-sm-10">
-      {{input type="password" value=passwordConfirmation class="form-control form-control-lg" placeholder=(t "register.passwordConfirm")}}
-      
-      {{#each errors.passwordConfirmation as |error|}}
-        <span class="alert alert-danger">{{error.message}}</span>
-      {{/each}}
+      {{input type="password" value=passwordConfirmation class="form-control form-control-lg" placeholder=(t "register.passwordConfirm")}}      
+    </div>
+    <div class="col-sm-10">
+      {{#if showError}}
+        {{#if (v-get this 'passwordConfirmation' 'isInvalid')}}
+          <span class="text-danger">
+            {{v-get this 'passwordConfirmation' 'message'}}
+          </span>
+        {{/if}}
+      {{/if}}
     </div>
   </div>
 

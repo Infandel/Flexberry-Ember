@@ -1,23 +1,83 @@
 import Component from '@ember/component';
 import { inject as service } from '@ember/service';
+import { validator, buildValidations } from 'ember-cp-validations';
+import { later } from '@ember/runloop';
+import { get, computed } from '@ember/object';
 
-export default Component.extend({
+const Validations = buildValidations({
+  reportDate: [
+    validator('ds-error'),
+    validator('presence', true),
+  ],  
+  bookScore: [
+    validator('ds-error'),
+    validator('presence', true),
+    validator('inclusion', {
+      range: [1, 5] // Must be between 0 (inclusive) to 5 (inclusive)
+    })
+  ],
+  presentationURL: [
+    validator('ds-error'),
+    validator('presence', true),
+    validator('format', {
+      type: 'url'
+    })
+  ],
+  videoURL: [
+    validator('ds-error'),
+    validator('presence', true),
+    validator('format', {
+      type: 'url'
+    })
+  ],
+  review: [
+    validator('ds-error'),
+    validator('presence', true),
+    validator('length', {
+      min: 2,
+      max: 400
+    })  
+  ],
+  speaker: [
+    validator('ds-error'),
+    validator('presence', true),
+  ],
+  book: [
+    validator('ds-error'),
+    validator('presence', true),
+  ],
+});
+
+export default Component.extend(Validations, {
+  i18n: service(),
   currentUser: service(),
   store: service(),
+  isFormValid: computed.alias('validations.isValid'),
+  showError: false,
+
   actions: {
     saveReport(e){
       e.preventDefault();
-      this.onsubmit({
-        reportDate: this.get('meeting.meetingDate'),
-        bookScore: this.get('bookScore'),
-        presentationURL: this.get('presentationURL'),
-        videoURL: this.get('videoURL'),
-        review: this.get('review'),
-        speaker: this.get('speaker'),
-        book: this.get('book'),
-        meeting: this.get('meeting'),
-        user: this.get('currentUser.user')
-      });
+      if (this.get('isFormValid')) {
+        this.set('showError', false) 
+        this.onsubmit({
+          reportDate: this.get('meeting.meetingDate'),
+          bookScore: this.get('bookScore'),
+          presentationURL: this.get('presentationURL'),
+          videoURL: this.get('videoURL'),
+          review: this.get('review'),
+          speaker: this.get('speaker'),
+          book: this.get('book'),
+          meeting: this.get('meeting'),
+          user: this.get('currentUser.user')
+        });
+      }
+      else {
+        this.set('showError', true),
+        later(() => {
+          this.set('showError', false)
+        }, 5000)
+      }
     },
 
     searchSpeaker(query) {

@@ -36,6 +36,13 @@
       "patronymic": "Fist",
       "userId": 6,
       "id": 11
+    },
+    {
+      "name": "Helga",
+      "surname": "Longry",
+      "patronymic": "Deily",
+      "userId": 3,
+      "id": 12
     }
   ],
   "books": [
@@ -118,6 +125,20 @@
       ],
       "userId": 6,
       "id": 8
+    },
+    {
+      "title": "Twenty Shades of Green",
+      "author": "Orlando Bloom",
+      "pagesCount": 140,
+      "coverURL": "",
+      "descriURL": "https://rawgit.com/offirgolan/ember-cp-validations/c4123c983e54f24dd790ffa1bad66cfdf2f47ec6/docs/classes/Inclusion.html",
+      "tags": [
+        "awesome",
+        "handsome",
+        "lovely"
+      ],
+      "userId": 3,
+      "id": 9
     }
   ],
   "meetings": [
@@ -126,13 +147,9 @@
       "id": 8
     },
     {
-      "meetingDate": "2021-08-03T19:00:00.000Z",
+      "meetingDate": "2021-08-06T19:00:00.000Z",
+      "userId": 3,
       "id": 9
-    },
-    {
-      "meetingDate": "2021-07-06T19:00:00.000Z",
-      "userId": 6,
-      "id": 10
     }
   ],
   "reports": [

@@ -12,12 +12,30 @@
       {{#power-select searchEnabled=true searchField="title" onchange=(action (mut book)) selected=book search=(action "searchBook") as |book|}}
         {{book.title}}
       {{/power-select}}
+    <div class="col-sm-10">
+      {{#if showError}}
+        {{#if (v-get this 'book' 'isInvalid')}}
+          <span class="text-danger">
+            {{v-get this 'book' 'message'}}
+          </span>
+        {{/if}}
+      {{/if}}
+    </div>
   </div>
 
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">{{t "reports.bookScore"}}:</label>
     <div class="col-sm-10">
       {{input type="number" value=bookScore class="form-control form-control-lg" placeholder="Оцените книгу (от 1 до 5)"}}
+    </div>
+    <div class="col-sm-10">
+      {{#if showError}}
+        {{#if (v-get this 'bookScore' 'isInvalid')}}
+          <span class="text-danger">
+            {{v-get this 'bookScore' 'message'}}
+          </span>
+        {{/if}}
+      {{/if}}
     </div>
   </div>
 
@@ -26,12 +44,30 @@
     <div class="col-sm-10">
       {{input type="url" value=presentationURL class="form-control form-control-lg" placeholder="Н-р: http://www.presentation.com"}}
     </div>
+    <div class="col-sm-10">
+      {{#if showError}}
+        {{#if (v-get this 'presentationURL' 'isInvalid')}}
+          <span class="text-danger">
+            {{v-get this 'presentationURL' 'message'}}
+          </span>
+        {{/if}}
+      {{/if}}
+    </div>
   </div>
 
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">{{t "reports.videoURL"}}:</label>
     <div class="col-sm-10">
       {{input type="url" value=videoURL class="form-control form-control-lg" placeholder="Н-р: http://www.video.com"}}
+    </div>
+    <div class="col-sm-10">
+      {{#if showError}}
+        {{#if (v-get this 'videoURL' 'isInvalid')}}
+          <span class="text-danger">
+            {{v-get this 'videoURL' 'message'}}
+          </span>
+        {{/if}}
+      {{/if}}
     </div>
   </div>  
 
@@ -40,6 +76,15 @@
       {{#power-select searchEnabled=true onchange=(action (mut speaker)) selected=speaker search=(action "searchSpeaker") as |speaker|}}
         {{speaker.surname}} {{speaker.name}} {{speaker.patronymic}}
       {{/power-select}}
+    <div class="col-sm-10">
+      {{#if showError}}
+        {{#if (v-get this 'speaker' 'isInvalid')}}
+          <span class="text-danger">
+            {{v-get this 'speaker' 'message'}}
+          </span>
+        {{/if}}
+      {{/if}}
+    </div>
   </div>  
 
   {{!-- <div class="form-group">
@@ -53,6 +98,15 @@
     <label class="col-sm-2 col-form-label">{{t "reports.review"}}:</label>
     <div class="col-sm-10">
       {{textarea type="text" rows="6" value=review class="form-control form-control-lg" placeholder="Напишите отзыв о книге"}}
+    </div>
+    <div class="col-sm-10">
+      {{#if showError}}
+        {{#if (v-get this 'review' 'isInvalid')}}
+          <span class="text-danger">
+            {{v-get this 'review' 'message'}}
+          </span>
+        {{/if}}
+      {{/if}}
     </div>
   </div>
 

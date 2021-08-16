@@ -1,48 +1,102 @@
 <form onsubmit={{action "submitForm"}} class="edit-form">
 
-  <div class="form-group row">
+  <div class="form-group">
     <label class="col-sm-2 col-form-label">{{t 'books.title'}}:</label>
     <div class="col-sm-10">
-      {{input type="text" value=title class="form-control form-control-lg" placeholder=(t 'book.placeholder.title')}}
+      {{input type="text" value=title class="form-control form-control-lg" placeholder=(t 'books.placeholder.title')}}
+    </div>
+    <div class="col-sm-10">
+      {{#if showError}}
+        {{#if (v-get this 'title' 'isInvalid')}}
+          <span class="text-danger">
+            {{v-get this 'title' 'message'}}
+          </span>
+        {{/if}}
+      {{/if}}
     </div>
   </div>
 
-  <div class="form-group row">
+  <div class="form-group">
     <label class="col-sm-2 col-form-label">{{t 'books.author'}}:</label>
     <div class="col-sm-10">
-      {{input type="text" value=author class="form-control form-control-lg" placeholder=(t 'book.placeholder.author')}}
+      {{input type="text" value=author class="form-control form-control-lg" placeholder=(t 'books.placeholder.author')}}
+    </div>
+    <div class="col-sm-10">
+      {{#if showError}}
+        {{#if (v-get this 'author' 'isInvalid')}}
+          <span class="text-danger">
+            {{v-get this 'author' 'message'}}
+          </span>
+        {{/if}}
+      {{/if}}
     </div>
   </div>
 
-  <div class="form-group row">
+  <div class="form-group">
     <label class="col-sm-2 col-form-label">{{t 'books.pagesCount'}}:</label>
     <div class="col-sm-10">
-      {{input type="number" value=pagesCount class="form-control form-control-lg" placeholder=(t 'books.placeholder.pageCount')}}
+      {{input type="number" value=pagesCount class="form-control form-control-lg" placeholder=(t 'books.placeholder.pagesCount')}}
+    </div>
+    <div class="col-sm-10">
+      {{#if showError}}
+        {{#if (v-get this 'pagesCount' 'isInvalid')}}
+          <span class="text-danger">
+            {{v-get this 'pagesCount' 'message'}}
+          </span>
+        {{/if}}
+      {{/if}}
     </div>
   </div>
 
-  <div class="form-group row">
+  <div class="form-group">
     <label class="col-sm-2 col-form-label">{{t 'books.coverURL'}}:</label>
     <div class="col-sm-10">
       {{input type="url" value=coverURL class="form-control form-control-lg" placeholder=(t 'books.placeholder.coverURL')}}
     </div>
+    <div class="col-sm-10">
+      {{#if showError}}
+        {{#if (v-get this 'coverURL' 'isInvalid')}}
+          <span class="text-danger">
+            {{v-get this 'coverURL' 'message'}}
+          </span>
+        {{/if}}
+      {{/if}}
+    </div>
   </div>
 
-  <div class="form-group row">
+  <div class="form-group">
     <label class="col-sm-2 col-form-label">{{t 'books.descriURL'}}:</label>
     <div class="col-sm-10">
       {{input type="url" value=descriURL class="form-control form-control-lg" placeholder=(t 'books.placeholder.descriURL')}}
     </div>
+    <div class="col-sm-10">
+      {{#if showError}}
+        {{#if (v-get this 'descriURL' 'isInvalid')}}
+          <span class="text-danger">
+            {{v-get this 'descriURL' 'message'}}
+          </span>
+        {{/if}}
+      {{/if}}
+    </div>
   </div>
 
-  <div class="form-group row">
+  <div class="form-group">
     <label class="col-sm-2 col-form-label">{{t 'books.tags'}}:</label>
     <div class="col-sm-10">
       {{input type="text" value=tags class="form-control form-control-lg" placeholder=(t 'books.placeholder.tags')}}
     </div>
+    <div class="col-sm-10">
+      {{#if showError}}
+        {{#if (v-get this 'tags' 'isInvalid')}}
+          <span class="text-danger">
+            {{v-get this 'tags' 'message'}}
+          </span>
+        {{/if}}
+      {{/if}}
+    </div>
   </div>
 
-  <div class="form-group row">
+  <div class="form-group-row">
     <div class="col-6">
       <button type="submit" class="btn btn-outline-primary btn-lg">{{t "buttons.save"}}</button>
     </div>

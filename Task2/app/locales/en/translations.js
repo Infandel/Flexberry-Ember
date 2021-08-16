@@ -1,7 +1,7 @@
 export default {
   errors: {
     description: "This field",
-    inclusion: "{{description}} is not included in the list",
+    inclusion: "{{description}} must correspond a number from 1 to 5",
     exclusion: "{{description}} is reserved",
     invalid: "{{description}} is invalid",
     confirmation: "{{description}} doesn't match {{on}}",
@@ -34,6 +34,7 @@ export default {
     email: "{{description}} must be a valid email address",
     phone: "{{description}} must be a valid phone number",
     url: "{{description}} must be a valid url",
+    password: 'password',
     passwordDescription: 'Password and password confirmation',
     passwordDontMatch: 'do not match'
   },
@@ -127,7 +128,7 @@ export default {
     addMeeting: 'Add meeting',
     meetingDate: 'Meeting date',
     editMeetingFor: 'Edit meeting for',
-    addMeetingDateOrEditReport: 'Edit meeting date or add new report',
+    editMeetingDateOrAddReport: 'Edit meeting date or add new report',
     deleteMeeting: 'Delete meeting',
     usefulLinks: 'Useful links',
     watchReportRecord: 'View the recording of the report',
