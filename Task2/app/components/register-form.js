@@ -27,18 +27,18 @@ const Validations = buildValidations({
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{passwordConfirmation,i18n.locale}', function () {
+      message: computed['model.{passwordConfirmation,i18n.locale}', function () {
         return '{description} ' + get(this, 'i18n').t('errors.blank');
-      }),
+      }],
     }),
     validator('confirmation', {
       on: 'password',
-      message: computed('model.{passwordConfirmation,i18n.locale}', function () {
+      message: computed['model.{passwordConfirmation,i18n.locale}', function () {
         return '{description} ' + get(this, 'model.i18n').t('errors.passwordDontMatch');
-      }),
-      description: computed('model.{passwordConfirmation,i18n.locale}', function () {
+      }],
+      description: computed['model.{passwordConfirmation,i18n.locale}', function () {
         return get(this, 'model.i18n').t('errors.passwordDescription');
-      })
+      }]
     })
   ]
 });

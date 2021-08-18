@@ -26,7 +26,7 @@
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">{{t "reports.bookScore"}}:</label>
     <div class="col-sm-10">
-      {{input type="number" value=bookScore class="form-control form-control-lg" placeholder="Оцените книгу (от 1 до 5)"}}
+      {{input type="number" value=bookScore class="form-control form-control-lg" placeholder=(t "reports.placeholder.bookScore")}}
     </div>
     <div class="col-sm-10">
       {{#if showError}}
@@ -42,7 +42,7 @@
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">{{t "reports.presentationURL"}}:</label>
     <div class="col-sm-10">
-      {{input type="url" value=presentationURL class="form-control form-control-lg" placeholder="Н-р: http://www.presentation.com"}}
+      {{input type="url" value=presentationURL class="form-control form-control-lg" placeholder=(t "reports.placeholder.presentationURL")}}
     </div>
     <div class="col-sm-10">
       {{#if showError}}
@@ -58,7 +58,7 @@
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">{{t "reports.videoURL"}}:</label>
     <div class="col-sm-10">
-      {{input type="url" value=videoURL class="form-control form-control-lg" placeholder="Н-р: http://www.video.com"}}
+      {{input type="url" value=videoURL class="form-control form-control-lg" placeholder=(t "reports.placeholder.videoURL")}}
     </div>
     <div class="col-sm-10">
       {{#if showError}}
@@ -97,7 +97,7 @@
   <div class="form-group row">
     <label class="col-sm-2 col-form-label">{{t "reports.review"}}:</label>
     <div class="col-sm-10">
-      {{textarea type="text" rows="6" value=review class="form-control form-control-lg" placeholder="Напишите отзыв о книге"}}
+      {{textarea type="text" rows="6" value=review class="form-control form-control-lg" placeholder=(t "reports.placeholder.review")}}
     </div>
     <div class="col-sm-10">
       {{#if showError}}

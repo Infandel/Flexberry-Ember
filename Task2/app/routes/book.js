@@ -11,15 +11,10 @@ export default Route.extend({
   },
 
   model({ search, searchByTag }) {
-    if (search) {
-      return this.get('store').query('book', { q: search });
+    
+    if (search || searchByTag) {
+      return this.get('store').query('book', { q: search, tags_like: searchByTag });
     }
-
-    else if (searchByTag) {
-      return this.get('store').query('book', { tags_like: searchByTag });
-    }
-
-
     return this.get('store').findAll('book');
   },
 

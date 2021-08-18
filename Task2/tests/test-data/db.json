@@ -143,49 +143,40 @@
   ],
   "meetings": [
     {
-      "meetingDate": "2021-08-25T19:00:00.000Z",
-      "id": 8
+      "meetingDate": "11.11.2021",
+      "userId": 3,
+      "id": 10
     },
     {
-      "meetingDate": "2021-08-06T19:00:00.000Z",
+      "meetingDate": "10.10.2020",
       "userId": 3,
-      "id": 9
+      "id": 11
     }
   ],
   "reports": [
     {
-      "reportDate": "26.08.2021",
-      "bookScore": 4,
-      "presentationURL": "https://api.emberjs.com/ember-data/3.2/classes/DS.Transform/methods",
-      "videoURL": "https://getbootstrap.com/docs/4.0/components/forms/",
-      "review": "Awesome book!",
-      "speakerId": 7,
-      "bookId": 3,
-      "meetingId": 8,
-      "id": 11
-    },
-    {
-      "reportDate": "04.08.2021",
+      "reportDate": "11.11.2021",
       "bookScore": 3,
-      "presentationURL": "https://guides.emberjs.com/v3.3.0/object-model/computed-properties/",
-      "videoURL": "https://guides.emberjs.com/release/components/built-in-components/",
-      "review": "Awe Sir!",
-      "speakerId": 10,
-      "bookId": 3,
-      "meetingId": 9,
-      "id": 12
-    },
-    {
-      "reportDate": "07.07.2021",
-      "bookScore": 3,
-      "presentationURL": "https://guides.emberjs.com/v3.3.0/object-model/computed-properties/",
-      "videoURL": "https://getbootstrap.com/docs/4.0/components/navbar/",
-      "review": "Awesome!",
+      "presentationURL": "https://rawgit.com/offirgolan/ember-cp-validations/c4123c983e54f24dd790ffa1bad66cfdf2f47ec6/docs/modules/Usage.html",
+      "videoURL": "https://rawgit.com/offirgolan/ember-cp-validations/c4123c983e54f24dd790ffa1bad66cfdf2f47ec6/docs/classes/Inclusion.html",
+      "review": "aweee!",
       "speakerId": 11,
       "bookId": 3,
       "meetingId": 10,
-      "userId": 6,
+      "userId": 3,
       "id": 13
+    },
+    {
+      "reportDate": "10.10.2020",
+      "bookScore": 4,
+      "presentationURL": "https://rawgit.com/offirgolan/ember-cp-validations/c4123c983e54f24dd790ffa1bad66cfdf2f47ec6/docs/classes/Inclusion.html",
+      "videoURL": "https://github.com/jasonmit/ember-i18n-cp-validations",
+      "review": "Awesome!!",
+      "speakerId": 10,
+      "bookId": 3,
+      "meetingId": 11,
+      "userId": 3,
+      "id": 14
     }
   ],
   "users": [

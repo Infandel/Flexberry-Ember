@@ -4,20 +4,34 @@ export default Controller.extend({
   actions: {
     async saveMeeting(meeting) {
       try {
-        this.get('model').setProperties(meeting)
-        await this.get('model').save();
+        let meetingModel = this.get('model');    
+        meetingModel.setProperties(meeting)
+        const reports = meetingModel.get('reports');
+        const dateToSet = meetingModel.get('meetingDate');
+        let saveReportsPromises = [];
+
+        saveReportsPromises.push(meetingModel.save())
+        reports.forEach(report => {
+          report.set('reportDate', dateToSet);
+          saveReportsPromises.push(report.save());
+        });
+
+        await Promise.all(saveReportsPromises);
+
+        // await meetingModel.save();
 
         this.transitionToRoute('meeting');
       }
-      catch(e){
+
+      catch(e) {
         this.send('error', e);
       }
     },
-    async deleteMeeting() {
+    async deleteMeeting(meeting) {
       try {
-        let reports = this.model.reports.toArray();
+        let reports = meeting.reports.toArray();
 
-        await this.model.destroyRecord();
+        await meeting.destroyRecord();
 
         reports.forEach(report => {
           report.unloadRecord();

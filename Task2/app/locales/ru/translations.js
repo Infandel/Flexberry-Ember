@@ -135,10 +135,10 @@ export default {
     watchReportRecord: 'Посмотреть запись доклада',
     dlPresentation: 'Скачать презентацию',
     clubMeetings: 'Встречи Клуба',
-    chooseDate: "Выберите Дату",
+    chooseDate: "Введите дату (формат ДД.ММ.ГГГГ)",
 
     placeholder: {
-      date: "Дата...",
+      date: "Н-р: 22.01.2021",
     },    
   },
   

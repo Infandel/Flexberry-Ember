@@ -134,10 +134,10 @@ export default {
     watchReportRecord: 'View the recording of the report',
     dlPresentation: 'Download presentation',
     clubMeetings: 'Club Meetings',
-    chooseDate: "Choose a date",
+    chooseDate: "Enter the date(format: dd.mm.yyyy)",
 
     placeholder: {
-      date: "Date..."
+      date: "For example: 20.02.2021"
     },    
   },
 

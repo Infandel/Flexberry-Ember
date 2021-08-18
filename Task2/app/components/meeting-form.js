@@ -8,6 +8,9 @@ const Validations = buildValidations({
   meetingDate: [
     validator('ds-error'),
     validator('presence', true),
+    validator('format', {
+      regex: /[0-3]{0,1}[0-9]\.[0-1]{0,1}[0-9]\.[0-9]{2,4}/
+    })
   ],
 });
 

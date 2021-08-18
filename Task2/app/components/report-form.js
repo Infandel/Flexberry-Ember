@@ -5,15 +5,12 @@ import { later } from '@ember/runloop';
 import { get, computed } from '@ember/object';
 
 const Validations = buildValidations({
-  reportDate: [
-    validator('ds-error'),
-    validator('presence', true),
-  ],  
+
   bookScore: [
     validator('ds-error'),
     validator('presence', true),
-    validator('inclusion', {
-      range: [1, 5] // Must be between 0 (inclusive) to 5 (inclusive)
+    validator('format', {
+      regex: /\b[1-5]\b/,
     })
   ],
   presentationURL: [
