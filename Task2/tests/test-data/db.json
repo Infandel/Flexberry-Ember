@@ -139,6 +139,19 @@
       ],
       "userId": 3,
       "id": 9
+    },
+    {
+      "title": "Awesome adventures of Tom Soyer",
+      "author": "Charles Dikkens",
+      "pagesCount": 500,
+      "coverURL": "https://thumbs.dreamstime.com/b/simple-flower-background-simple-flower-background-petals-summer-season-allergy-plant-152750248.jpg",
+      "descriURL": "https://github.com/jasonmit/ember-i18n-cp-validations",
+      "tags": [
+        "awesome",
+        "adventure"
+      ],
+      "userId": 6,
+      "id": 10
     }
   ],
   "meetings": [

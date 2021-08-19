@@ -31,7 +31,8 @@ const Validations = buildValidations({
   coverURL: [
     validator('ds-error'),
     validator('format', {
-      type: 'url'
+      type: 'url',
+      regex: /([a-z\-_0-9\/\:\.]*\.(jpg|jpeg|png|gif|svg))/i
     })
   ],
   descriURL: [
