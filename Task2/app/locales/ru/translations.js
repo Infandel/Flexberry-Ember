@@ -36,7 +36,9 @@ export default {
     url: "{{description}} должно быть правильной ссылкой",
     password: 'пароль',
     passwordDescription: 'Пароль и подтверждение пароля',
-    passwordDontMatch: 'не совпадают'
+    passwordDontMatch: 'не совпадают',
+    tags: 'Тэги должны быть введены через запятую и без пробелов',
+    coverURL: 'должно быть правильной ссылкой с расширением .jpg .jpeg .gif и т.д.'
   },
 
   menu: {

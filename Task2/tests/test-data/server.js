@@ -49,7 +49,7 @@ const getBaseRoute = (req) => {
 
 const isAuthorized = (req) => {
   const baseRoute = getBaseRoute(req);
-  if (req.path === '/users' || req.path === '/token' || ((baseRoute === 'speakers' || baseRoute === 'books' || baseRoute === 'meetings' || baseRoute === 'reports') && req.method === 'GET')) {
+  if (req.path === '/users' || req.path === '/token' || (req.path === '/logs' && req.method === 'POST') || ((baseRoute === 'speakers' || baseRoute === 'books' || baseRoute === 'meetings' || baseRoute === 'reports') && req.method === 'GET')) {
     return 200;
   }
 
@@ -76,6 +76,12 @@ server.use(middlewares)
 // To handle POST, PUT and PATCH you need to use a body-parser
 // You can use the one used by JSON Server
 server.use(jsonServer.bodyParser);
+
+// Adding IP adress of current request to log
+server.use('/logs', function (req, res, next) {
+  req.body.ipAdress = req.ip;
+  next();
+})
 
 server.post('/token', function (req, res) {
   const emailFromBody = req.body.email;
@@ -179,6 +185,7 @@ server.use((req, res, next) => {
   }
 });
 
+//Adding IP to delete requests
 function responseInterceptor(req, res, next) {
   var originalSend = res.send;
 
@@ -203,6 +210,8 @@ function responseInterceptor(req, res, next) {
 }
 
 server.use(responseInterceptor);
+
+
 
 // Use default router
 server.use(router)

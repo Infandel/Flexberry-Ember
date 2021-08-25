@@ -7,7 +7,12 @@ import { get, computed } from '@ember/object';
 const Validations = buildValidations({
   name: [
     validator('ds-error'),
-    validator('presence', true),
+    validator('presence', {
+      presence: true,
+      message: computed('model.{i18n.locale}', function () {
+          return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      }),
+    }),
     validator('length', {
       min: 2,
       max: 40
@@ -15,7 +20,12 @@ const Validations = buildValidations({
   ],
   surname: [
     validator('ds-error'),
-    validator('presence', true),
+    validator('presence', {
+      presence: true,
+      message: computed('model.{i18n.locale}', function () {
+          return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      }),
+    }),
     validator('length', {
       min: 2,
       max: 40

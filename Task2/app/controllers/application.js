@@ -28,7 +28,7 @@ export default Controller.extend({
     changeLocale(e) {
       set(this, 'currentLocale', e.target.value);
       set(this, 'i18n.locale', get(this, 'currentLocale'));
-    }
+    },
   },
 
   init() {

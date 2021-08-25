@@ -235,5 +235,194 @@
       "passwordConfirmation": "2055e2e1319757539c899d2f32038e41094eb593317524c503132c60f52bb6ff",
       "id": 6
     }
+  ],
+  "logs": [
+    {
+      "currentDate": "2012-11-30T01:21:00.000Z",
+      "ipAdress": "127.0.0.1",
+      "currentURL": "http://www.example.com/admin/new?sort=desc",
+      "errorText": "Here goes your error",
+      "id": 1
+    },
+    {
+      "currentDate": null,
+      "ipAdress": null,
+      "currentURL": "http://localhost:4200/register",
+      "errorText": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 2
+    },
+    {
+      "currentDate": null,
+      "ipAdress": null,
+      "currentURL": "http://localhost:4200/register",
+      "errorText": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 3
+    },
+    {
+      "currentDate": null,
+      "ipAdress": null,
+      "currentURL": "http://localhost:4200/register",
+      "errorText": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 4
+    },
+    {
+      "currentDate": null,
+      "ipAdress": null,
+      "currentURL": "http://localhost:4200/register",
+      "errorText": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 5
+    },
+    {
+      "currentDate": null,
+      "ipAdress": null,
+      "currentURL": "http://localhost:4200/register",
+      "errorText": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 6
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 13:33:46 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": null,
+      "currentURL": null,
+      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "formattedMessage": "{\"name\":\"Error\",\"message\":\"Assertion Failed: You attempted to define a `{{link-to \\\"book.create\\\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create\",\"fileName\":null,\"lineNumber\":null,\"columnNumber\":null,\"stack\":\"Error: Assertion Failed: You attempted to define a `{{link-to \\\"book.create\\\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create\\n    at new EmberError (http://localhost:4200/assets/vendor.js:32271:25)\\n    at assert (http://localhost:4200/assets/vendor.js:32521:15)\\n    at Class.computeLinkToComponentHref (http://localhost:4200/assets/vendor.js:36172:65)\\n    at ComputedPropertyPrototype.get (http://localhost:4200/assets/vendor.js:45319:28)\\n    at get (http://localhost:4200/assets/vendor.js:44689:27)\\n    at RootPropertyReference.compute (http://localhost:4200/assets/vendor.js:33885:40)\\n    at RootPropertyReference.value (http://localhost:4200/assets/vendor.js:33762:53)\\n    at ComponentElementOperations.flush (http://localhost:4200/assets/vendor.js:23374:89)\\n    at Object.evaluate (http://localhost:4200/assets/vendor.js:22892:24)\\n    at AppendOpcodes.evaluate (http://localhost:4200/assets/vendor.js:22202:27)\"}",
+      "id": 7
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 13:34:48 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": null,
+      "currentURL": null,
+      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "formattedMessage": "{\"name\":\"Error\",\"message\":\"Assertion Failed: You attempted to define a `{{link-to \\\"book.create\\\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create\",\"fileName\":null,\"lineNumber\":null,\"columnNumber\":null,\"stack\":\"Error: Assertion Failed: You attempted to define a `{{link-to \\\"book.create\\\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create\\n    at new EmberError (http://localhost:4200/assets/vendor.js:32271:25)\\n    at assert (http://localhost:4200/assets/vendor.js:32521:15)\\n    at Class.computeLinkToComponentHref (http://localhost:4200/assets/vendor.js:36172:65)\\n    at ComputedPropertyPrototype.get (http://localhost:4200/assets/vendor.js:45319:28)\\n    at get (http://localhost:4200/assets/vendor.js:44689:27)\\n    at RootPropertyReference.compute (http://localhost:4200/assets/vendor.js:33885:40)\\n    at RootPropertyReference.value (http://localhost:4200/assets/vendor.js:33762:53)\\n    at ComponentElementOperations.flush (http://localhost:4200/assets/vendor.js:23374:89)\\n    at Object.evaluate (http://localhost:4200/assets/vendor.js:22892:24)\\n    at AppendOpcodes.evaluate (http://localhost:4200/assets/vendor.js:22202:27)\"}",
+      "id": 8
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 13:35:47 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": null,
+      "currentURL": null,
+      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "formattedMessage": "{\"name\":\"Error\",\"message\":\"Assertion Failed: You attempted to define a `{{link-to \\\"book.create\\\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create\",\"fileName\":null,\"lineNumber\":null,\"columnNumber\":null,\"stack\":\"Error: Assertion Failed: You attempted to define a `{{link-to \\\"book.create\\\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create\\n    at new EmberError (http://localhost:4200/assets/vendor.js:32271:25)\\n    at assert (http://localhost:4200/assets/vendor.js:32521:15)\\n    at Class.computeLinkToComponentHref (http://localhost:4200/assets/vendor.js:36172:65)\\n    at ComputedPropertyPrototype.get (http://localhost:4200/assets/vendor.js:45319:28)\\n    at get (http://localhost:4200/assets/vendor.js:44689:27)\\n    at RootPropertyReference.compute (http://localhost:4200/assets/vendor.js:33885:40)\\n    at RootPropertyReference.value (http://localhost:4200/assets/vendor.js:33762:53)\\n    at ComponentElementOperations.flush (http://localhost:4200/assets/vendor.js:23374:89)\\n    at Object.evaluate (http://localhost:4200/assets/vendor.js:22892:24)\\n    at AppendOpcodes.evaluate (http://localhost:4200/assets/vendor.js:22202:27)\"}",
+      "id": 9
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 13:39:39 GMT+0500 (Екатеринбург, стандартное время)",
+      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "id": 10
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 13:41:36 GMT+0500 (Екатеринбург, стандартное время)",
+      "currentURL": "http://localhost:4200/books",
+      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "id": 11
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 13:42:40 GMT+0500 (Екатеринбург, стандартное время)",
+      "currentURL": "http://localhost:4200/books",
+      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "id": 12
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 13:43:28 GMT+0500 (Екатеринбург, стандартное время)",
+      "currentURL": "http://localhost:4200/books",
+      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "id": 13
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 13:43:56 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "",
+      "currentURL": "http://localhost:4200/books",
+      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "id": 14
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 13:45:35 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "",
+      "currentURL": "http://localhost:4200/books",
+      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "id": 15
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 13:53:11 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "",
+      "currentURL": "http://localhost:4200/books",
+      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "id": 16
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 13:55:51 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": [],
+      "currentURL": "http://localhost:4200/books",
+      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "id": 17
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 13:55:54 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": [],
+      "currentURL": "http://localhost:4200/books",
+      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "id": 18
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 13:56:34 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": [],
+      "currentURL": "http://localhost:4200/books",
+      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "id": 19
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 13:59:28 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": [],
+      "currentURL": "http://localhost:4200/books",
+      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "id": 20
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 13:59:43 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/books",
+      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "id": 21
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 14:03:25 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/books",
+      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "id": 22
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 14:05:31 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: An action named 'save' was not found in <book-club@controller:speaker-create::ember434>",
+      "id": 23
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 14:06:02 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: An action named 'saveSpeaker' was not found in <book-club@controller:speaker-create::ember434>",
+      "id": 24
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 14:11:00 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Cannot read property 'create' of undefined",
+      "id": 25
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 14:16:43 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: calling set on destroyed object: <book-club@component:speaker-form::ember434>.showError = false",
+      "id": 26
+    },
+    {
+      "currentDate": "Wed Aug 25 2021 14:18:37 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Cannot read property 'create' of undefined",
+      "id": 27
+    }
   ]
 }

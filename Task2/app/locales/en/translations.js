@@ -36,7 +36,9 @@ export default {
     url: "{{description}} must be a valid url",
     password: 'password',
     passwordDescription: 'Password and password confirmation',
-    passwordDontMatch: 'do not match'
+    passwordDontMatch: 'do not match',
+    tags: 'Tags should be entered with commas and without whitespaces',
+    coverURL: 'must be a valid URL with img extension .jpg .jpeg .gif and etc'
   },
 
   menu: {

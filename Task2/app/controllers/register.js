@@ -1,6 +1,8 @@
 import Controller from '@ember/controller';
+import { inject as service } from '@ember/service';
 
 export default Controller.extend({
+  store: service(),
   actions: {
     async saveUser(user) {
       let newUser;
@@ -12,6 +14,12 @@ export default Controller.extend({
       }
       catch(e) {
         e.user = newUser;
+        let newLog = this.get('store').createRecord('log', 
+          {currentDate: new Date().toString(),
+          message: e.message,
+          currentURL: window.location.href,
+          ipAdress: '',})
+        newLog.save();
         this.send('error', e);
       }
     },

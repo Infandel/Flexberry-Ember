@@ -8,40 +8,76 @@ const Validations = buildValidations({
 
   bookScore: [
     validator('ds-error'),
-    validator('presence', true),
+    validator('presence', {
+      presence: true,
+      message: computed('model.{i18n.locale}', function () {
+          return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      }),
+    }),
     validator('format', {
       regex: /\b[1-5]\b/,
     })
   ],
   presentationURL: [
     validator('ds-error'),
-    validator('presence', true),
+    validator('presence', {
+      presence: true,
+      message: computed('model.{i18n.locale}', function () {
+          return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      }),
+    }),
     validator('format', {
-      type: 'url'
+      type: 'url',
+      message: computed('model.{i18n.locale}', function () {
+        return '{description} ' + get(this, 'model.i18n').t('errors.url');
+      }),
     })
   ],
   videoURL: [
     validator('ds-error'),
-    validator('presence', true),
+    validator('presence', {
+      presence: true,
+      message: computed('model.{i18n.locale}', function () {
+          return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      }),
+    }),
     validator('format', {
-      type: 'url'
+      type: 'url',
+      message: computed('model.{i18n.locale}', function () {
+        return '{description} ' + get(this, 'model.i18n').t('errors.url');
+      }),
     })
   ],
   review: [
     validator('ds-error'),
-    validator('presence', true),
+    validator('presence', {
+      presence: true,
+      message: computed('model.{i18n.locale}', function () {
+        return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      }),
+    }),
     validator('length', {
       min: 2,
-      max: 400
+      max: 400,
     })  
   ],
   speaker: [
     validator('ds-error'),
-    validator('presence', true),
+    validator('presence', {
+      presence: true,
+      message: computed('model.{i18n.locale}', function () {
+        return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      }),
+    }),
   ],
   book: [
     validator('ds-error'),
-    validator('presence', true),
+    validator('presence', {
+      presence: true,
+      message: computed('model.{i18n.locale}', function () {
+          return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      }),
+    }),
   ],
 });
 
