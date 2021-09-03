@@ -682,6 +682,13 @@
       "currentURL": "http://localhost:4200/speaker-create",
       "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
       "id": 64
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 09:53:23 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 65
     }
   ]
 }

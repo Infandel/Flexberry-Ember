@@ -10,9 +10,9 @@ const Validations = buildValidations({
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{i18n.locale}', function () {
-        return '{description} ' + get(this.model, this.model.i18n).t('errors.blank');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //   return '{description} ' + get(this.model, this.model.i18n).t('errors.blank');
+      // }),
     }),
     validator('length', {
       min: 2,
@@ -23,9 +23,9 @@ const Validations = buildValidations({
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{surname, i18n.locale}', function() {
-        return  '{description}';
-      }),
+      // message: computed('model.{surname, i18n.locale}', function() {
+      //   return  '{description}';
+      // }),
     }),
     validator('length', {
       min: 2,

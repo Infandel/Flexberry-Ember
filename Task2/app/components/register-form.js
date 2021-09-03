@@ -10,33 +10,33 @@ const Validations = buildValidations({
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{i18n.locale}', function () {
-        return '{description} ' + get(this, 'model.i18n').t('errors.blank');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //   return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      // }),
     }),
   ],
   email: [
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{i18n.locale}', function () {
-        return '{description} ' + get(this, 'model.i18n').t('errors.blank');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //   return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      // }),
     }),
     validator('format', {
       type: 'email',
-      message: computed('model.{i18n.locale}', function () {
-        return '{description} ' + get(this, 'model.i18n').t('errors.email');
-      }), 
+      // message: computed('model.{i18n.locale}', function () {
+      //   return '{description} ' + get(this, 'model.i18n').t('errors.email');
+      // }), 
     })
   ],
   password: [
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{i18n.locale}', function () {
-        return '{description} ' + get(this, 'model.i18n').t('errors.blank');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //   return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      // }),
     }),
     validator('length', {
       min: 4,
@@ -47,18 +47,18 @@ const Validations = buildValidations({
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{i18n.locale}', function () {
-          return '{description} ' + get(this, 'model.i18n').t('errors.blank');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //     return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      // }),
     }),
     validator('confirmation', {
       on: 'password',
-      message: computed('model.{passwordConfirmation,i18n.locale}', function () {
-        return '{description} ' + get(this, 'model.i18n').t('errors.passwordDontMatch');
-      }),
-      description: computed('model.{passwordConfirmation,i18n.locale}', function () {
-        return get(this, 'model.i18n').t('errors.passwordDescription');
-      })
+      // message: computed('model.{passwordConfirmation,i18n.locale}', function () {
+      //   return '{description} ' + get(this, 'model.i18n').t('errors.passwordDontMatch');
+      // }),
+      // description: computed('model.{passwordConfirmation,i18n.locale}', function () {
+      //   return get(this, 'model.i18n').t('errors.passwordDescription');
+      // })
     })
   ]
 });

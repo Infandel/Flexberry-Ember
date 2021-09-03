@@ -10,9 +10,9 @@ const Validations = buildValidations({
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{i18n.locale}', function () {
-          return '{description} ' + get(this, 'model.i18n').t('errors.blank');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //     return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      // }),
     }),
     validator('format', {
       regex: /\b[1-5]\b/,
@@ -22,39 +22,39 @@ const Validations = buildValidations({
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{i18n.locale}', function () {
-          return '{description} ' + get(this, 'model.i18n').t('errors.blank');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //     return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      // }),
     }),
     validator('format', {
       type: 'url',
-      message: computed('model.{i18n.locale}', function () {
-        return '{description} ' + get(this, 'model.i18n').t('errors.url');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //   return '{description} ' + get(this, 'model.i18n').t('errors.url');
+      // }),
     })
   ],
   videoURL: [
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{i18n.locale}', function () {
-          return '{description} ' + get(this, 'model.i18n').t('errors.blank');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //     return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      // }),
     }),
     validator('format', {
       type: 'url',
-      message: computed('model.{i18n.locale}', function () {
-        return '{description} ' + get(this, 'model.i18n').t('errors.url');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //   return '{description} ' + get(this, 'model.i18n').t('errors.url');
+      // }),
     })
   ],
   review: [
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{i18n.locale}', function () {
-        return '{description} ' + get(this, 'model.i18n').t('errors.blank');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //   return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      // }),
     }),
     validator('length', {
       min: 2,
@@ -65,18 +65,18 @@ const Validations = buildValidations({
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{i18n.locale}', function () {
-        return '{description} ' + get(this, 'model.i18n').t('errors.blank');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //   return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      // }),
     }),
   ],
   book: [
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{i18n.locale}', function () {
-          return '{description} ' + get(this, 'model.i18n').t('errors.blank');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //     return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      // }),
     }),
   ],
 });

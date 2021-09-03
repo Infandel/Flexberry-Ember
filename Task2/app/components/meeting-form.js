@@ -9,15 +9,15 @@ const Validations = buildValidations({
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{i18n.locale}', function () {
-        return '{description} ' + get(this, 'model.i18n').t('errors.blank');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //   return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      // }),
     }),
     validator('format', {
       regex: /[0-3]{0,1}[0-9]\.[0-1]{0,1}[0-9]\.[0-9]{2,4}/,
-      message: computed('model.{i18n.locale}', function () {
-        return '{description} ' + get(this, 'model.i18n').t('errors.date');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //   return '{description} ' + get(this, 'model.i18n').t('errors.date');
+      // }),
     })
   ],
 });

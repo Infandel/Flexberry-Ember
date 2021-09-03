@@ -9,9 +9,9 @@ const Validations = buildValidations({
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{i18n.locale}', function () {
-        return '{description} ' + get(this, 'model.i18n').t('errors.blank');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //   return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      // }),
     }),
     validator('length', {
       min: 2,
@@ -22,9 +22,9 @@ const Validations = buildValidations({
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{i18n.locale}', function () {
-        return '{description} ' + get(this, 'model.i18n').t('errors.blank');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //   return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      // }),
     }),
     validator('length', {
       min: 2,
@@ -35,15 +35,15 @@ const Validations = buildValidations({
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{i18n.locale}', function () {
-        return '{description} ' + get(this, 'model.i18n').t('errors.blank');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //   return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      // }),
     }),
     validator('format', {
       regex: /^[0-9]+$/,
-      message: computed('model.{i18n.locale}', function () {
-        return '{description} ' + get(this, 'model.i18n').t('errors.positive');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //   return '{description} ' + get(this, 'model.i18n').t('errors.positive');
+      // }),
     })
   ],
   coverURL: [
@@ -51,18 +51,18 @@ const Validations = buildValidations({
     validator('format', {
       type: 'url',
       regex: /([a-z\-_0-9\/\:\.]*\.(jpg|jpeg|png|gif|svg))/i,
-      message: computed('model.{i18n.locale}', function () {
-        return '{description} ' + get(this, 'model.i18n').t('errors.coverURL');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //   return '{description} ' + get(this, 'model.i18n').t('errors.coverURL');
+      // }),
     })
   ],
   descriURL: [
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{i18n.locale}', function () {
-        return '{description} ' + get(this, 'model.i18n').t('errors.blank');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //   return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      // }),
     }),
     validator('format', {
       type: 'url'
@@ -72,18 +72,18 @@ const Validations = buildValidations({
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{i18n.locale}', function () {
-        return '{description} ' + get(this, 'model.i18n').t('errors.blank');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //   return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      // }),
     }),
     validator('length', {
       min: 2,
     }),
     validator('format', {
       regex: /^[a-zA-Z0-9,]*$/,
-      message: computed('model.{i18n.locale}', function () {
-        return get(this, 'model.i18n').t('errors.tags');
-      }),
+      // message: computed('model.{i18n.locale}', function () {
+      //   return get(this, 'model.i18n').t('errors.tags');
+      // }),
     })
   ],
 });
