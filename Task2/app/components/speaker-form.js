@@ -1,8 +1,9 @@
 import Component from '@ember/component';
+import { get, computed } from '@ember/object';
 import { inject as service } from '@ember/service';
 import { validator, buildValidations } from 'ember-cp-validations';
 import { later } from '@ember/runloop';
-import { get, computed } from '@ember/object';
+
 
 const Validations = buildValidations({
   name: [
@@ -10,7 +11,7 @@ const Validations = buildValidations({
     validator('presence', {
       presence: true,
       message: computed('model.{i18n.locale}', function () {
-          return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+        return '{description} ' + get(this.model, this.model.i18n).t('errors.blank');
       }),
     }),
     validator('length', {
@@ -22,8 +23,8 @@ const Validations = buildValidations({
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      message: computed('model.{i18n.locale}', function () {
-          return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      message: computed('model.{surname, i18n.locale}', function() {
+        return  '{description}';
       }),
     }),
     validator('length', {

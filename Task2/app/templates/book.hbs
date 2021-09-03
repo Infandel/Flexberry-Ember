@@ -8,7 +8,7 @@
             <p></p>
             {{input type="text" value=searchByTag class="form-control mr-2 search-only" placeholder=(t 'books.placeholder.searchByTag')}}
             {{#if this.session.isAuthenticated}}
-              {{#link-to "book.create" class="btn btn-outline-primary my-2"}}
+              {{#link-to "book-create" class="btn btn-outline-primary my-2"}}
                 {{t "books.addBook"}}
               {{/link-to}}
             {{/if}}

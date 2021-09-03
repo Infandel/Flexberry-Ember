@@ -423,6 +423,265 @@
       "currentURL": "http://localhost:4200/speaker-create",
       "message": "Cannot read property 'create' of undefined",
       "id": 27
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:12:30 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 28
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:13:40 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 29
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:14:08 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 30
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:14:53 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 31
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:15:18 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 32
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:15:40 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 33
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:16:31 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "[ember-cp-validations] Validator not found of type: undefined.",
+      "id": 34
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:21:07 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 35
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:27:37 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 36
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:30:26 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 37
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:33:04 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 38
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:34:29 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 39
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:35:12 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 40
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:35:50 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 41
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:36:41 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 42
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:38:07 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 43
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:38:56 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 44
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:40:41 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 45
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:40:48 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 46
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:44:28 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 47
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:48:26 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 48
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:49:44 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 49
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:57:19 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 50
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:58:09 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 51
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:58:21 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 52
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:58:46 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 53
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 07:59:13 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 54
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 08:00:27 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 55
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 08:15:14 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 56
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 08:25:23 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 57
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 08:29:14 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 58
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 08:30:05 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 59
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 08:32:00 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 60
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 08:33:47 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 61
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 08:35:19 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "_options.default.create is not a function",
+      "id": 62
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 08:36:30 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "_options.default.create is not a function",
+      "id": 63
+    },
+    {
+      "currentDate": "Fri Sep 03 2021 08:36:38 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/speaker-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "id": 64
     }
   ]
 }
