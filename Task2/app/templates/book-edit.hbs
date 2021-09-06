@@ -1,9 +1,21 @@
 <div class="container h-100">
   <div class="htop">
     <h3 class="text-center">{{t "books.editBook"}}:
-      <h4>{{model.title}}</h4>
+      <h4 class='text-primary'>{{model.title}}</h4>
     </h3>
-    {{book-form book=model onsubmit=(action "saveBook")}}
+    {{#if model.coverURL}}
+      <h4 class='text-center text-secondary'>{{t "books.currentBookCover"}}:</h4>
+      <div class='container h-300'>
+        <img src={{model.coverURL}} width="250" height="250" class="rounded mx-auto d-block" alt={{t "books.currentBookCover"}}>
+      </div>
+      <p></p>
+      <div class="text-center">
+        <button type="button" onclick={{ action "deleteCurrentCover" model }} class="btn btn-outline-danger" >
+          {{t "buttons.deleteCurrentCover"}} 
+        </button>
+      </div>
+    {{/if}}
+    {{book-form uploadData=uploadData book=model onsubmit=(action "saveBook")}}
   </div>
 </div>
 {{outlet}}

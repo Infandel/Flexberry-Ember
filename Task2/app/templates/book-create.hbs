@@ -1,7 +1,7 @@
 <div class="container h-100">
   <div class="htop">
     <h2 class="text-center">{{t "books.addBook"}}</h2>
-    {{book-form book=model onsubmit=(action "saveBook")}}
+    {{book-form uploadData=uploadData book=model onsubmit=(action "saveBook")}}
   </div>
 </div>
 {{outlet}}

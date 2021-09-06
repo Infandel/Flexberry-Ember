@@ -2,6 +2,12 @@
 // eslint-disable-next-line no-undef
 const jsonServer = require('json-server')
 // eslint-disable-next-line no-undef
+const path = require('path');
+// eslint-disable-next-line no-undef
+const multer = require('multer');
+// eslint-disable-next-line no-undef
+const fs = require("fs");
+// eslint-disable-next-line no-undef
 const jwt = require("jsonwebtoken");
 // eslint-disable-next-line no-undef
 const crypto = require('crypto');
@@ -10,6 +16,24 @@ const router = jsonServer.router('./tests/test-data/db.json')
 const middlewares = jsonServer.defaults()
 const secretKey = '09f26e402586e2faa8da4c98a35f1b20d6b033c6097befa8be3486a829587ve2f90a832bd3ff9d42710a4da095a2ce6h5b009f0c3730cd9b8e1af3eb84df6611';
 const hashingSecret = "l529b09fc50c";
+
+const pathToSave = 'public/uploads';
+const urlBase = '/public/';
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    if (!fs.existsSync(path.join('G:\\Flexberry-Ember\\Task2\\', pathToSave))) {
+      fs.mkdirSync(path.join('G:\\Flexberry-Ember\\Task2\\', pathToSave));
+    }
+    cb(null, path.join('G:\\Flexberry-Ember\\Task2\\', pathToSave));
+  },
+  filename: function (req, file, cb) {
+    const ext = path.extname(file.originalname);
+    const name = path.win32.basename(file.originalname, ext);
+    cb(null, `${name}-${Date.now()}${ext}`);
+  }
+});
+
+const upload = multer({ storage });
 
 const generateAccessToken = (userData) => {
   // expires after half and hour (1800 seconds = 30 minutes)
@@ -49,7 +73,7 @@ const getBaseRoute = (req) => {
 
 const isAuthorized = (req) => {
   const baseRoute = getBaseRoute(req);
-  if (req.path === '/users' || req.path === '/token' || (req.path === '/logs' && req.method === 'POST') || ((baseRoute === 'speakers' || baseRoute === 'books' || baseRoute === 'meetings' || baseRoute === 'reports') && req.method === 'GET')) {
+  if (req.path === '/FileUpload' || (baseRoute === 'books' && req.method === 'PATCH') || req.path === '/users' || req.path === '/token' || (req.path === '/logs' && req.method === 'POST') || ((baseRoute === 'speakers' || baseRoute === 'books' || baseRoute === 'meetings' || baseRoute === 'reports') && req.method === 'GET')) {
     return 200;
   }
 
@@ -97,6 +121,18 @@ server.post('/token', function (req, res) {
   }
   else {
     res.status(401).json(getError('Login', 'Error logging in user with that e-mail and password', 401, null));
+  }
+});
+
+server.post('/FileUpload', upload.any(), function (req, res) {
+
+  let filedata = req.files;
+
+  if (!filedata) {
+    res.status(500).json(getError('File upload', 'Error during file upload', 500, null));
+  }
+  else {
+    res.status(201).json({ filename: filedata[0].filename });
   }
 });
 

@@ -64,12 +64,16 @@ export default {
     title: 'Название',
     author: 'Автор',
     pagesCount: 'Количество страниц',
-    coverURL: 'Ссылка на обложку',
+    coverURL: 'Загрузите обложку',
     descriURL: 'Ссылка на описание',
     tags: 'Тэги',
     avgBookScore: 'Средняя оценка книги',
     reportsList: 'Список выступлений',
     reportURL: 'Ссылка на выступление',
+    chooseFile: 'Выберите файл',
+    choose: 'Выбрать',
+    currentBookCover: 'Текущая обложка книги',
+
     placeholder: {
       searchByTag: 'Поиск по тэгам',
       searchAll: 'Поиск по названию, автору, тэгам',
@@ -156,6 +160,7 @@ export default {
     edit: 'Редактировать',
     save: 'Сохранить',
     delete: 'Удалить',
-    cancel: 'Отмена'
+    cancel: 'Отмена',
+    deleteCurrentCover: 'Удалить текущую обложку'
   }
 };

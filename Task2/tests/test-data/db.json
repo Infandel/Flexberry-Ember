@@ -43,6 +43,13 @@
       "patronymic": "Deily",
       "userId": 3,
       "id": 12
+    },
+    {
+      "name": "Bill",
+      "surname": "Clinton",
+      "patronymic": "Junior",
+      "userId": 3,
+      "id": 13
     }
   ],
   "books": [
@@ -152,6 +159,45 @@
       ],
       "userId": 6,
       "id": 10
+    },
+    {
+      "title": "Little Red Hood",
+      "author": "Charles Dikkens",
+      "pagesCount": 120,
+      "coverURL": "",
+      "descriURL": "https://docs.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/virtual",
+      "tags": [
+        "Super",
+        "Adventure",
+        "Awesome"
+      ],
+      "userId": 3,
+      "id": 12
+    },
+    {
+      "title": "sadsadsad",
+      "author": "asddassad",
+      "pagesCount": 5,
+      "coverURL": "/uploads/devushka-art-fentezi-voin-7571-1630918686527.jpg",
+      "descriURL": "https://docs.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/virtual",
+      "tags": [
+        "saasdas"
+      ],
+      "userId": 3,
+      "id": 13
+    },
+    {
+      "title": "Sayonara",
+      "author": "Japanese Guy",
+      "pagesCount": 15,
+      "coverURL": "/uploads/devushka-art-fentezi-voin-7571-1630921444189.jpg",
+      "descriURL": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET",
+      "tags": [
+        "Japanese",
+        "Culture"
+      ],
+      "userId": 3,
+      "id": 14
     }
   ],
   "meetings": [
@@ -164,6 +210,31 @@
       "meetingDate": "10.10.2020",
       "userId": 3,
       "id": 11
+    },
+    {
+      "meetingDate": "10.10.2020",
+      "userId": 3,
+      "id": 12
+    },
+    {
+      "meetingDate": "01.01.1990",
+      "userId": 3,
+      "id": 13
+    },
+    {
+      "meetingDate": "15.10.2020",
+      "userId": 3,
+      "id": 14
+    },
+    {
+      "meetingDate": "15.10.2021",
+      "userId": 3,
+      "id": 15
+    },
+    {
+      "meetingDate": "09.09.2020",
+      "userId": 3,
+      "id": 16
     }
   ],
   "reports": [
@@ -190,43 +261,27 @@
       "meetingId": 11,
       "userId": 3,
       "id": 14
+    },
+    {
+      "reportDate": "10.10.2020",
+      "bookScore": 4,
+      "presentationURL": "https://flexberry.github.io/ru/gpg_server-logic-implementation.html",
+      "videoURL": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET",
+      "review": "Awesome!",
+      "speakerId": 11,
+      "bookId": 3,
+      "meetingId": 12,
+      "userId": 3,
+      "id": 15
     }
   ],
   "users": [
-    {
-      "email": "a@a.ru",
-      "username": "a",
-      "password": "3c1efb017ea632c6ff5fab2bf62cdcd8c5cf667bdcdc5b25b4c44e16770f1064",
-      "passwordConfirmation": "3c1efb017ea632c6ff5fab2bf62cdcd8c5cf667bdcdc5b25b4c44e16770f1064",
-      "id": 1
-    },
-    {
-      "email": "b@b.ru",
-      "username": "dummy",
-      "password": "97786f8c2e7e07a0a05a6685aa3d2f532d42753728f69ce8e20a5c09c67f498a",
-      "passwordConfirmation": "97786f8c2e7e07a0a05a6685aa3d2f532d42753728f69ce8e20a5c09c67f498a",
-      "id": 2
-    },
     {
       "email": "c@c.com",
       "username": "test",
       "password": "21132dde0c9a9840a1abe82a58492a0ee3c528995abb4c79908232bcede7c92c",
       "passwordConfirmation": "21132dde0c9a9840a1abe82a58492a0ee3c528995abb4c79908232bcede7c92c",
       "id": 3
-    },
-    {
-      "email": "wrong",
-      "username": "",
-      "password": "361609e559c8532927aca2f5d0698345fcddaf1e4f2240466747069fdbb3ba5c",
-      "passwordConfirmation": "361609e559c8532927aca2f5d0698345fcddaf1e4f2240466747069fdbb3ba5c",
-      "id": 4
-    },
-    {
-      "email": "b@b.ru",
-      "username": "dummy2",
-      "password": "97786f8c2e7e07a0a05a6685aa3d2f532d42753728f69ce8e20a5c09c67f498a",
-      "passwordConfirmation": "97786f8c2e7e07a0a05a6685aa3d2f532d42753728f69ce8e20a5c09c67f498a",
-      "id": 5
     },
     {
       "email": "admin@admin.ru",
@@ -245,450 +300,109 @@
       "id": 1
     },
     {
-      "currentDate": null,
-      "ipAdress": null,
-      "currentURL": "http://localhost:4200/register",
-      "errorText": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "currentDate": "Mon Sep 06 2021 12:34:24 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/book-create",
+      "message": "Cannot read property 't' of undefined",
       "id": 2
     },
     {
-      "currentDate": null,
-      "ipAdress": null,
-      "currentURL": "http://localhost:4200/register",
-      "errorText": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "currentDate": "Mon Sep 06 2021 12:37:55 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/book-create",
+      "message": "Cannot read property 't' of undefined",
       "id": 3
     },
     {
-      "currentDate": null,
-      "ipAdress": null,
-      "currentURL": "http://localhost:4200/register",
-      "errorText": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "currentDate": "Mon Sep 06 2021 12:39:35 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/book-create",
+      "message": "Cannot read property 't' of undefined",
       "id": 4
     },
     {
-      "currentDate": null,
-      "ipAdress": null,
-      "currentURL": "http://localhost:4200/register",
-      "errorText": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "currentDate": "Mon Sep 06 2021 12:40:12 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/book-create",
+      "message": "Cannot read property 't' of undefined",
       "id": 5
     },
     {
-      "currentDate": null,
-      "ipAdress": null,
-      "currentURL": "http://localhost:4200/register",
-      "errorText": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
+      "currentDate": "Mon Sep 06 2021 12:41:22 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/book-create",
+      "message": "Cannot read property 't' of undefined",
       "id": 6
     },
     {
-      "currentDate": "Wed Aug 25 2021 13:33:46 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": null,
-      "currentURL": null,
-      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
-      "formattedMessage": "{\"name\":\"Error\",\"message\":\"Assertion Failed: You attempted to define a `{{link-to \\\"book.create\\\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create\",\"fileName\":null,\"lineNumber\":null,\"columnNumber\":null,\"stack\":\"Error: Assertion Failed: You attempted to define a `{{link-to \\\"book.create\\\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create\\n    at new EmberError (http://localhost:4200/assets/vendor.js:32271:25)\\n    at assert (http://localhost:4200/assets/vendor.js:32521:15)\\n    at Class.computeLinkToComponentHref (http://localhost:4200/assets/vendor.js:36172:65)\\n    at ComputedPropertyPrototype.get (http://localhost:4200/assets/vendor.js:45319:28)\\n    at get (http://localhost:4200/assets/vendor.js:44689:27)\\n    at RootPropertyReference.compute (http://localhost:4200/assets/vendor.js:33885:40)\\n    at RootPropertyReference.value (http://localhost:4200/assets/vendor.js:33762:53)\\n    at ComponentElementOperations.flush (http://localhost:4200/assets/vendor.js:23374:89)\\n    at Object.evaluate (http://localhost:4200/assets/vendor.js:22892:24)\\n    at AppendOpcodes.evaluate (http://localhost:4200/assets/vendor.js:22202:27)\"}",
+      "currentDate": "Mon Sep 06 2021 12:48:21 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/meeting-create",
+      "message": "[ember-cp-validations] Validator not found of type: undefined.",
       "id": 7
     },
     {
-      "currentDate": "Wed Aug 25 2021 13:34:48 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": null,
-      "currentURL": null,
-      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
-      "formattedMessage": "{\"name\":\"Error\",\"message\":\"Assertion Failed: You attempted to define a `{{link-to \\\"book.create\\\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create\",\"fileName\":null,\"lineNumber\":null,\"columnNumber\":null,\"stack\":\"Error: Assertion Failed: You attempted to define a `{{link-to \\\"book.create\\\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create\\n    at new EmberError (http://localhost:4200/assets/vendor.js:32271:25)\\n    at assert (http://localhost:4200/assets/vendor.js:32521:15)\\n    at Class.computeLinkToComponentHref (http://localhost:4200/assets/vendor.js:36172:65)\\n    at ComputedPropertyPrototype.get (http://localhost:4200/assets/vendor.js:45319:28)\\n    at get (http://localhost:4200/assets/vendor.js:44689:27)\\n    at RootPropertyReference.compute (http://localhost:4200/assets/vendor.js:33885:40)\\n    at RootPropertyReference.value (http://localhost:4200/assets/vendor.js:33762:53)\\n    at ComponentElementOperations.flush (http://localhost:4200/assets/vendor.js:23374:89)\\n    at Object.evaluate (http://localhost:4200/assets/vendor.js:22892:24)\\n    at AppendOpcodes.evaluate (http://localhost:4200/assets/vendor.js:22202:27)\"}",
+      "currentDate": "Mon Sep 06 2021 12:49:09 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/meeting-create",
+      "message": "[ember-cp-validations] Validator not found of type: undefined.",
       "id": 8
     },
     {
-      "currentDate": "Wed Aug 25 2021 13:35:47 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": null,
-      "currentURL": null,
-      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
-      "formattedMessage": "{\"name\":\"Error\",\"message\":\"Assertion Failed: You attempted to define a `{{link-to \\\"book.create\\\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create\",\"fileName\":null,\"lineNumber\":null,\"columnNumber\":null,\"stack\":\"Error: Assertion Failed: You attempted to define a `{{link-to \\\"book.create\\\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create\\n    at new EmberError (http://localhost:4200/assets/vendor.js:32271:25)\\n    at assert (http://localhost:4200/assets/vendor.js:32521:15)\\n    at Class.computeLinkToComponentHref (http://localhost:4200/assets/vendor.js:36172:65)\\n    at ComputedPropertyPrototype.get (http://localhost:4200/assets/vendor.js:45319:28)\\n    at get (http://localhost:4200/assets/vendor.js:44689:27)\\n    at RootPropertyReference.compute (http://localhost:4200/assets/vendor.js:33885:40)\\n    at RootPropertyReference.value (http://localhost:4200/assets/vendor.js:33762:53)\\n    at ComponentElementOperations.flush (http://localhost:4200/assets/vendor.js:23374:89)\\n    at Object.evaluate (http://localhost:4200/assets/vendor.js:22892:24)\\n    at AppendOpcodes.evaluate (http://localhost:4200/assets/vendor.js:22202:27)\"}",
+      "currentDate": "Mon Sep 06 2021 12:49:24 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/meeting-create",
+      "message": "[ember-cp-validations] Validator not found of type: undefined.",
       "id": 9
     },
     {
-      "currentDate": "Wed Aug 25 2021 13:39:39 GMT+0500 (Екатеринбург, стандартное время)",
-      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "currentDate": "Mon Sep 06 2021 12:50:24 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/meeting-create",
+      "message": "[ember-cp-validations] Validator not found of type: undefined.",
       "id": 10
     },
     {
-      "currentDate": "Wed Aug 25 2021 13:41:36 GMT+0500 (Екатеринбург, стандартное время)",
-      "currentURL": "http://localhost:4200/books",
-      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "currentDate": "Mon Sep 06 2021 12:51:49 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/meeting-create",
+      "message": "[ember-cp-validations] Validator not found of type: undefined.",
       "id": 11
     },
     {
-      "currentDate": "Wed Aug 25 2021 13:42:40 GMT+0500 (Екатеринбург, стандартное время)",
-      "currentURL": "http://localhost:4200/books",
-      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "currentDate": "Mon Sep 06 2021 12:53:34 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/meeting-create",
+      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
       "id": 12
     },
     {
-      "currentDate": "Wed Aug 25 2021 13:43:28 GMT+0500 (Екатеринбург, стандартное время)",
-      "currentURL": "http://localhost:4200/books",
-      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "currentDate": "Mon Sep 06 2021 13:11:17 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/book-create",
+      "message": "Failed to execute 'setAttribute' on 'Element': '20px' is not a valid attribute name.",
       "id": 13
     },
     {
-      "currentDate": "Wed Aug 25 2021 13:43:56 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "",
-      "currentURL": "http://localhost:4200/books",
-      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "currentDate": "Mon Sep 06 2021 13:51:59 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/book-edit/13",
+      "message": "editedBook.save is not a function",
       "id": 14
     },
     {
-      "currentDate": "Wed Aug 25 2021 13:45:35 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "",
-      "currentURL": "http://localhost:4200/books",
-      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "currentDate": "Mon Sep 06 2021 13:56:33 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/book-edit/13",
+      "message": "Cannot read property 'get' of undefined",
       "id": 15
     },
     {
-      "currentDate": "Wed Aug 25 2021 13:53:11 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "",
-      "currentURL": "http://localhost:4200/books",
-      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
+      "currentDate": "Mon Sep 06 2021 14:33:33 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::1",
+      "currentURL": "http://localhost:4200/book-edit/14",
+      "message": "bookWithoutCover.save is not a function",
       "id": 16
-    },
-    {
-      "currentDate": "Wed Aug 25 2021 13:55:51 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": [],
-      "currentURL": "http://localhost:4200/books",
-      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
-      "id": 17
-    },
-    {
-      "currentDate": "Wed Aug 25 2021 13:55:54 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": [],
-      "currentURL": "http://localhost:4200/books",
-      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
-      "id": 18
-    },
-    {
-      "currentDate": "Wed Aug 25 2021 13:56:34 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": [],
-      "currentURL": "http://localhost:4200/books",
-      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
-      "id": 19
-    },
-    {
-      "currentDate": "Wed Aug 25 2021 13:59:28 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": [],
-      "currentURL": "http://localhost:4200/books",
-      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
-      "id": 20
-    },
-    {
-      "currentDate": "Wed Aug 25 2021 13:59:43 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/books",
-      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
-      "id": 21
-    },
-    {
-      "currentDate": "Wed Aug 25 2021 14:03:25 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/books",
-      "message": "Assertion Failed: You attempted to define a `{{link-to \"book.create\"}}` but did not pass the parameters required for generating its dynamic segments. There is no route named book.create",
-      "id": 22
-    },
-    {
-      "currentDate": "Wed Aug 25 2021 14:05:31 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: An action named 'save' was not found in <book-club@controller:speaker-create::ember434>",
-      "id": 23
-    },
-    {
-      "currentDate": "Wed Aug 25 2021 14:06:02 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: An action named 'saveSpeaker' was not found in <book-club@controller:speaker-create::ember434>",
-      "id": 24
-    },
-    {
-      "currentDate": "Wed Aug 25 2021 14:11:00 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Cannot read property 'create' of undefined",
-      "id": 25
-    },
-    {
-      "currentDate": "Wed Aug 25 2021 14:16:43 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: calling set on destroyed object: <book-club@component:speaker-form::ember434>.showError = false",
-      "id": 26
-    },
-    {
-      "currentDate": "Wed Aug 25 2021 14:18:37 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Cannot read property 'create' of undefined",
-      "id": 27
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:12:30 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 28
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:13:40 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 29
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:14:08 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 30
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:14:53 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 31
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:15:18 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 32
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:15:40 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 33
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:16:31 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "[ember-cp-validations] Validator not found of type: undefined.",
-      "id": 34
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:21:07 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 35
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:27:37 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 36
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:30:26 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 37
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:33:04 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 38
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:34:29 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 39
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:35:12 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 40
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:35:50 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 41
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:36:41 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 42
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:38:07 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 43
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:38:56 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 44
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:40:41 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 45
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:40:48 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 46
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:44:28 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 47
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:48:26 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 48
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:49:44 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 49
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:57:19 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 50
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:58:09 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 51
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:58:21 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 52
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:58:46 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 53
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 07:59:13 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 54
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 08:00:27 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 55
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 08:15:14 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 56
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 08:25:23 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 57
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 08:29:14 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 58
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 08:30:05 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 59
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 08:32:00 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 60
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 08:33:47 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 61
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 08:35:19 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "_options.default.create is not a function",
-      "id": 62
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 08:36:30 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "_options.default.create is not a function",
-      "id": 63
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 08:36:38 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 64
-    },
-    {
-      "currentDate": "Fri Sep 03 2021 09:53:23 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/speaker-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 65
     }
   ]
 }

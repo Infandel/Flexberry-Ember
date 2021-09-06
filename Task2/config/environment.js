@@ -7,6 +7,13 @@ module.exports = function(environment) {
     backendURL: 'http://localhost:3000',
     rootURL: '/',
     locationType: 'auto',
+    moment: {
+      // Options:
+      // 'all' - all years, all timezones
+      // '2010-2020' - 2010-2020, all timezones
+      // 'none' - no data, just timezone API
+      includeTimezone: 'all'
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -31,6 +38,8 @@ module.exports = function(environment) {
       defaultLocale: 'en'
     }
   };
+
+  ENV.fileUploadURL = ENV.backendURL + '/FileUpload';
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;

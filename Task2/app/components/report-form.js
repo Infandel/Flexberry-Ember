@@ -89,27 +89,39 @@ export default Component.extend(Validations, {
   showError: false,
 
   actions: {
-    saveReport(e){
-      e.preventDefault();
-      if (this.get('isFormValid')) {
-        this.set('showError', false) 
-        this.onsubmit({
-          reportDate: this.get('meeting.meetingDate'),
-          bookScore: this.get('bookScore'),
-          presentationURL: this.get('presentationURL'),
-          videoURL: this.get('videoURL'),
-          review: this.get('review'),
-          speaker: this.get('speaker'),
-          book: this.get('book'),
-          meeting: this.get('meeting'),
-          user: this.get('currentUser.user')
-        });
+    async saveReport(e){ 
+      try {
+        e.preventDefault();
+        if (this.get('isFormValid')) {
+          this.set('showError', false) 
+          this.onsubmit({
+            reportDate: this.get('meeting.meetingDate'),
+            bookScore: this.get('bookScore'),
+            presentationURL: this.get('presentationURL'),
+            videoURL: this.get('videoURL'),
+            review: this.get('review'),
+            speaker: this.get('speaker'),
+            book: this.get('book'),
+            meeting: this.get('meeting'),
+            user: this.get('currentUser.user')
+          });
+        }
+        else {
+          this.set('showError', true),
+          later(() => {
+            this.set('showError', false)
+          }, 5000)
+        }
       }
-      else {
-        this.set('showError', true),
-        later(() => {
-          this.set('showError', false)
-        }, 5000)
+      catch(e){
+        let newLog = this.get('store').createRecord('log', { 
+          currentDate: new Date().toString(),
+          message: e.message,
+          currentURL: window.location.href,
+          ipAdress: '',
+        })
+        newLog.save();
+        this.send('error', e);
       }
     },
 

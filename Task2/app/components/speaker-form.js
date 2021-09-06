@@ -45,22 +45,34 @@ export default Component.extend(Validations, {
   showError: false,
 
   actions: {
-    submitForm(e){
-      e.preventDefault();
-      if (this.get('isFormValid')) {
-        this.set('showError', false)      
-        this.onsubmit({
-          name: this.get('name'),
-          surname: this.get('surname'),
-          patronymic: this.get('patronymic'),
-          user: this.get('currentUser.user')
-        });
+    async submitForm(e) {
+      try {
+        e.preventDefault();
+        if (this.get('isFormValid')) {
+          this.set('showError', false)      
+          this.onsubmit({
+            name: this.get('name'),
+            surname: this.get('surname'),
+            patronymic: this.get('patronymic'),
+            user: this.get('currentUser.user')
+          });
+        }
+        else {
+          this.set('showError', true),
+          later(() => {
+            this.set('showError', false)
+          }, 5000)
+        }
       }
-      else {
-        this.set('showError', true),
-        later(() => {
-          this.set('showError', false)
-        }, 5000)
+      catch(e){
+        let newLog = this.get('store').createRecord('log', { 
+          currentDate: new Date().toString(),
+          message: e.message,
+          currentURL: window.location.href,
+          ipAdress: '',
+        })
+        newLog.save();
+        this.send('error', e);
       }
     }
   },

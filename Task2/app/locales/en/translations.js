@@ -64,10 +64,13 @@ export default {
     title: 'Title',
     author: 'Author',
     pagesCount: 'Pages Count',
-    coverURL: 'Link to book cover',
+    coverURL: 'Upload book cover',
     descriURL: 'Link to description',
     tags: 'Tags',
     avgBookScore: 'Average book score',
+    chooseFile: 'Choose file',
+    choose: 'Browse',
+    currentBookCover: 'Current book cover',    
     
     placeholder: {
       searchByTag: 'Search by tags',
@@ -156,6 +159,7 @@ export default {
     edit: 'Edit',
     save: 'Save',
     delete: 'Delete',
-    cancel: 'Cancel'
+    cancel: 'Cancel',
+    deleteCurrentCover: 'Delete current cover'
   }
 };

@@ -1,11 +1,22 @@
 import Controller from '@ember/controller';
+import { inject as service } from '@ember/service';
 
 export default Controller.extend({
+  dataService: service('data'),
+  
   actions: {
     async saveBook(book) {
       try {
         this.get('model').setProperties(book)
-        await this.get('model').save();
+        let uploadData = this.get('uploadData');
+        let data = this.get('dataService')
+        let correctedBook = this.get('model')
+        await correctedBook.save()
+        .then( function() {
+          if (uploadData) {
+            data.uploadImg(uploadData, correctedBook.id)
+          }
+        });
 
         this.transitionToRoute('book');
       }
@@ -18,6 +29,14 @@ export default Controller.extend({
         newLog.save();
         this.send('error', e);
       }
+    },
+    
+    deleteCurrentCover () {
+      this.get('model').setProperties({
+        coverURL: ''
+      })
+      let bookWithoutCover = this.get('model')
+      bookWithoutCover.save()
     }
   }
 });

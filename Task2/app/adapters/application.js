@@ -36,10 +36,20 @@ export default DS.JSONAPIAdapter.extend({
       url += '?_embed=reports';
     }
 
-    if (modelName === 'meeting' && requestType === 'findAll') {
+    if (modelName === 'meeting' && requestType === 'query') {
       url += '?_embed=reports'
     }
 
     return url;
+  },
+  
+  handleResponse(status, headers, payload) {
+    const meta = {
+      total: headers['x-total-count'],
+    };
+
+    payload.meta = meta;
+
+    return this._super(status, headers, payload);
   }
 });

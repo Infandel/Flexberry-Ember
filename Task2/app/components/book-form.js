@@ -2,7 +2,7 @@ import Component from '@ember/component';
 import { inject as service } from '@ember/service';
 import { validator, buildValidations } from 'ember-cp-validations';
 import { later } from '@ember/runloop';
-import { get, computed } from '@ember/object';
+import { get, set, computed } from '@ember/object';
 
 const Validations = buildValidations({
   title: [
@@ -39,22 +39,16 @@ const Validations = buildValidations({
       //   return '{description} ' + get(this, 'model.i18n').t('errors.blank');
       // }),
     }),
-    validator('format', {
-      regex: /^[0-9]+$/,
-      // message: computed('model.{i18n.locale}', function () {
-      //   return '{description} ' + get(this, 'model.i18n').t('errors.positive');
-      // }),
-    })
   ],
   coverURL: [
     validator('ds-error'),
-    validator('format', {
-      type: 'url',
-      regex: /([a-z\-_0-9\/\:\.]*\.(jpg|jpeg|png|gif|svg))/i,
+    // validator('format', {
+    //   type: 'url',
+      // regex: /([a-z\-_0-9\/\:\.]*\.(jpg|jpeg|png|gif|svg))/i,
       // message: computed('model.{i18n.locale}', function () {
       //   return '{description} ' + get(this, 'model.i18n').t('errors.coverURL');
       // }),
-    })
+    // })
   ],
   descriURL: [
     validator('ds-error'),
@@ -70,52 +64,67 @@ const Validations = buildValidations({
   ],
   tags: [
     validator('ds-error'),
-    validator('presence', {
-      presence: true,
+    // validator('presence', {
+    //   presence: true,
       // message: computed('model.{i18n.locale}', function () {
       //   return '{description} ' + get(this, 'model.i18n').t('errors.blank');
       // }),
-    }),
-    validator('length', {
-      min: 2,
-    }),
-    validator('format', {
-      regex: /^[a-zA-Z0-9,]*$/,
-      // message: computed('model.{i18n.locale}', function () {
-      //   return get(this, 'model.i18n').t('errors.tags');
-      // }),
-    })
+    // }),
+    // validator('length', {
+    //   min: 2,
+    // }),
   ],
 });
 
 export default Component.extend(Validations, {
+  dataService: service('data'),
   i18n: service(),
   currentUser: service(),
   isFormValid: computed.alias('validations.isValid'),
   showError: false,
 
   actions: {
-    submitForm(e){
-      e.preventDefault();
-      if (this.get('isFormValid')) {
-        this.set('showError', false)   
-        this.onsubmit({
-          title: this.get('title'),
-          author: this.get('author'),
-          pagesCount: this.get('pagesCount'),
-          coverURL: this.get('coverURL'),
-          descriURL: this.get('descriURL'),
-          tags: this.get('tags').toString().split(','),
-          user: this.get('currentUser.user')
-        });
-      }
-      else {
-        this.set('showError', true),
-        later(() => {
+    async submitForm(e) {
+      try {
+        e.preventDefault();
+        if (this.get('isFormValid')) {
           this.set('showError', false)
-        }, 5000)
+          await this.onsubmit({
+            title: this.get('title'),
+            author: this.get('author'),
+            pagesCount: this.get('pagesCount'),
+            descriURL: this.get('descriURL'),
+            tags: this.get('tags'),
+            user: this.get('currentUser.user'), 
+          }, 
+          );          
+        }
+        else {
+          this.set('showError', true),
+          later(() => {
+            this.set('showError', false)
+          }, 5000)
+        }
       }
-    }
+      catch(e){
+        let newLog = this.get('store').createRecord('log', { 
+          currentDate: new Date().toString(),
+          message: e.message,
+          currentURL: window.location.href,
+          ipAdress: '',
+        })
+        newLog.save();
+        this.send('error', e);
+      }
+    },
+
+    changeTags(newTags) {
+      set(this, 'tags', [...newTags]);
+    },
+
+    changeUploadData(uploadData) {
+      set(this, 'uploadData', uploadData);
+    },
   },
 
   didReceiveAttrs() {
@@ -124,7 +133,7 @@ export default Component.extend(Validations, {
       title: this.get('book.title'),
       author: this.get('book.author'),
       pagesCount: this.get('book.pagesCount'),
-      coverURL: this.get('book.coverURL'),
+      // coverURL: this.get('book.coverURL'),
       descriURL: this.get('book.descriURL'),
       tags: this.get('book.tags'),
     });

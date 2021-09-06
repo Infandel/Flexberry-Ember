@@ -9,8 +9,8 @@ const Validations = buildValidations({
     validator('ds-error'),
     validator('presence', {
       presence: true,
-      // message: computed('model.{i18n.locale}', function () {
-      //   return '{description} ' + get(this, 'model.i18n').t('errors.blank');
+      // message: computed('i18n.locale', function () {
+      //   return '{description} ' + get(this, 'i18n').t('errors.blank');
       // }),
     }),
     validator('format', {
@@ -24,7 +24,6 @@ const Validations = buildValidations({
 
 
 export default Component.extend(Validations, {
-  i18n: service(),
   currentUser: service(),
   store: service(),
   isFormValid: computed.alias('validations.isValid'),
@@ -32,19 +31,31 @@ export default Component.extend(Validations, {
 
   actions: {
     async saveMeeting(e) {
-      e.preventDefault();
-      if (this.get('isFormValid')) {
-        this.set('showError', false)   
-        this.onsubmit({
-          meetingDate: this.get('meetingDate'),
-          user: this.get('currentUser.user')
-        });
-       }
-      else {
-        this.set('showError', true),
-        later(() => {
-          this.set('showError', false)
-        }, 5000)
+      try {
+        e.preventDefault();
+        if (this.get('isFormValid')) {
+          this.set('showError', false)   
+          this.onsubmit({
+            meetingDate: this.get('meetingDate'),
+            user: this.get('currentUser.user')
+          });
+        }
+        else {
+          this.set('showError', true),
+          later(() => {
+            this.set('showError', false)
+          }, 5000)
+        }
+      }
+      catch(e){
+        let newLog = this.get('store').createRecord('log', { 
+          currentDate: new Date().toString(),
+          message: e.message,
+          currentURL: window.location.href,
+          ipAdress: '',
+        })
+        newLog.save();
+        this.send('error', e);
       }
     }
   },
