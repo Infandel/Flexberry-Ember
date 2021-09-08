@@ -12,21 +12,33 @@
       {{/if}}
       <div class="col-md-3">
         <h5>{{t "speakers.speaker"}}</h5>
-        
+        <div class="mb-2">
+          {{#power-select
+            options=model.speakers
+            selected=selectedSpeaker
+            onchange=(action "changeSpeaker")
+            searchField="fullName"
+            allowClear=true
+            as |speaker|
+          }}
+            {{speaker.fullName}}
+          {{/power-select}}
+        </div>
       </div>
       <div class="col-md-3">
         <h5>{{t "books.book"}}</h5>
-        <div class="dropdown">
-          <button class="btn btn-outline-secondary dropdown-toggle my-2 w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span>{{t "books.book"}}...</span>
-            <span class="caret"></span>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">{{t "books.title"}}</a>
-            <a class="dropdown-item" href="#">{{t "books.title"}}</a>
-            <a class="dropdown-item" href="#">{{t "books.title"}}</a>
-          </div>
-          </div>
+        <div class="mb-2">
+          {{#power-select
+            options=model.books
+            selected=selectedBook
+            onchange=(action "changeBook")
+            searchField="title"
+            allowClear=true
+            as |book|
+          }}
+            {{book.title}}
+          {{/power-select}}
+        </div>
       </div>
       <div class="col-md-3">
         <h5>{{t "meetings.meetingDate"}}</h5>
@@ -45,7 +57,7 @@
         </div>
       </div>
     </div>
-    {{#each model as |meeting|}} 
+    {{#each model.meetings as |meeting|}} 
     <div class="border border-dark rounded p-4 mb-4">
       <h4>{{t "meetings.meetingDate"}}</h4>
       <div class="row h-100 justify-content-between mb-4">
@@ -113,8 +125,8 @@
     {{/each}}
     <ul class="pagination justify-content-end">
       {{#each pages as |page|}}
-        <li class="btn btn-primary page-link mb-4">
-          {{link-to page "meeting" (query-params page=page)}}
+        <li class="mb-4">
+          {{link-to page "meeting" (query-params page=page) class="btn btn-primary page-link"}}
         </li>
       {{/each}}
     </ul>

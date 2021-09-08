@@ -73,7 +73,7 @@ const getBaseRoute = (req) => {
 
 const isAuthorized = (req) => {
   const baseRoute = getBaseRoute(req);
-  if (req.path === '/FileUpload' || (baseRoute === 'books' && req.method === 'PATCH') || req.path === '/users' || req.path === '/token' || (req.path === '/logs' && req.method === 'POST') || ((baseRoute === 'speakers' || baseRoute === 'books' || baseRoute === 'meetings' || baseRoute === 'reports') && req.method === 'GET')) {
+  if (req.path === '/FileUpload' || (baseRoute === 'meetings' && req.method === 'PATCH') || req.path === '/users' || req.path === '/token' || (req.path === '/logs' && req.method === 'POST') || ((baseRoute === 'speakers' || baseRoute === 'meetings' || baseRoute === 'meetings' || baseRoute === 'reports') && req.method === 'GET')) {
     return 200;
   }
 
@@ -247,7 +247,46 @@ function responseInterceptor(req, res, next) {
 
 server.use(responseInterceptor);
 
+server.use((req, res, next) => {
+  const book = Number(req.query.book)
+  const speaker = Number(req.query.speaker)
+  if (req.method === 'GET' && req.path === '/meetings' && !Number.isNaN(book) || !Number.isNaN(speaker)) {
+    const meetingsList = []
+    let reports = []
+    if (!Number.isNaN(book) && !Number.isNaN(speaker)) {
+      reports = router.db.get('reports').filter((r) => r.bookId === book && r.speakerId === speaker).value()
+    } else {
+      reports = router.db.get('reports').filter((r) => r.bookId === book || r.speakerId === speaker).value()
+    }
+    // Making filter on each report to get the right meeting, then filtering on embedded reports to return embedded data
+    reports.filter(function(report) {
+      const meetings = router.db.get('meetings').filter((m) => m.id === report.meetingId).map((meeting) => {
+        meeting.reports = router.db.get('reports').filter((r) => r.meetingId === meeting.id).value()
 
+        return meeting;
+      }).value();
+      meetingsList.push(meetings[0])
+    });
+    // to Get rid of meeting duplicates we making mapping and filtering below
+    let ids = meetingsList.map(o => o.id) 
+    const filteredMeetingList = meetingsList.filter(({id}, index) => !ids.includes(id, index + 1));
+    // Adding links to response so pagination buttons gonna appear on response
+    res.links({
+      first: `http://localhost:3000/meetings?_embed=reports&_limit=${req.query._limit}&_page=1`,
+      prev: `http://localhost:3000/meetings?_embed=reports&_limit=${req.query._limit}&_page=2`,
+      next: `http://localhost:3000/meetings?_embed=reports&_limit=${req.query._limit}&_page=3`,
+      last: `http://localhost:3000/meetings?_embed=reports&_limit=${req.query._limit}&_page=4`
+    })
+    // Adding headers for the same purposes
+    res.setHeader('Access-Control-Expose-Headers', 'X-Total-Count, Link');
+    res.setHeader('Transfer-Encoding', 'chunked');
+    res.setHeader('X-Total-Count', `${filteredMeetingList.length}`);
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    res.json(filteredMeetingList);
+  } else {
+    next();
+  }
+});
 
 // Use default router
 server.use(router)

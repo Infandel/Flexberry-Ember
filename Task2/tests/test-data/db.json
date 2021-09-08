@@ -50,6 +50,13 @@
       "patronymic": "Junior",
       "userId": 3,
       "id": 13
+    },
+    {
+      "name": "Senior",
+      "surname": "Junior",
+      "patronymic": "Middle",
+      "userId": 3,
+      "id": 14
     }
   ],
   "books": [
@@ -217,16 +224,6 @@
       "id": 12
     },
     {
-      "meetingDate": "01.01.1990",
-      "userId": 3,
-      "id": 13
-    },
-    {
-      "meetingDate": "15.10.2020",
-      "userId": 3,
-      "id": 14
-    },
-    {
       "meetingDate": "15.10.2021",
       "userId": 3,
       "id": 15
@@ -235,6 +232,11 @@
       "meetingDate": "09.09.2020",
       "userId": 3,
       "id": 16
+    },
+    {
+      "meetingDate": "10.10.1999",
+      "userId": 3,
+      "id": 17
     }
   ],
   "reports": [
@@ -273,6 +275,78 @@
       "meetingId": 12,
       "userId": 3,
       "id": 15
+    },
+    {
+      "reportDate": "11.11.2021",
+      "bookScore": 5,
+      "presentationURL": "http://unitycontainer.org/api/Unity.IUnityContainer.html",
+      "videoURL": "http://unitycontainer.org/api/Unity.IUnityContainer.html",
+      "review": "Weee!",
+      "speakerId": 11,
+      "bookId": 10,
+      "meetingId": 10,
+      "userId": 3,
+      "id": 16
+    },
+    {
+      "reportDate": "10.10.2020",
+      "bookScore": 4,
+      "presentationURL": "http://unitycontainer.org/api/Unity.IUnityContainer.html",
+      "videoURL": "http://unitycontainer.org/api/Unity.IUnityContainer.html",
+      "review": "Awe!",
+      "speakerId": 6,
+      "bookId": 6,
+      "meetingId": 11,
+      "userId": 3,
+      "id": 17
+    },
+    {
+      "reportDate": "10.10.2020",
+      "bookScore": 2,
+      "presentationURL": "http://unitycontainer.org/api/Unity.IUnityContainer.html",
+      "videoURL": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET",
+      "review": "Awe sir!",
+      "speakerId": 11,
+      "bookId": 6,
+      "meetingId": 12,
+      "userId": 3,
+      "id": 18
+    },
+    {
+      "reportDate": "15.10.2021",
+      "bookScore": 4,
+      "presentationURL": "https://offirgolan.github.io/ember-cp-validations/docs/classes/Number.html",
+      "videoURL": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET",
+      "review": "Awe sir ouey!",
+      "speakerId": 9,
+      "bookId": 3,
+      "meetingId": 15,
+      "userId": 3,
+      "id": 20
+    },
+    {
+      "reportDate": "09.09.2020",
+      "bookScore": 4,
+      "presentationURL": "https://offirgolan.github.io/ember-cp-validations/docs/classes/Number.html",
+      "videoURL": "https://offirgolan.github.io/ember-cp-validations/docs/classes/Number.html",
+      "review": "Wonderful!",
+      "speakerId": 11,
+      "bookId": 3,
+      "meetingId": 16,
+      "userId": 3,
+      "id": 21
+    },
+    {
+      "reportDate": "10.10.1999",
+      "bookScore": 4,
+      "presentationURL": "https://offirgolan.github.io/ember-cp-validations/docs/classes/Number.html",
+      "videoURL": "https://www.npmjs.com/package/json-server",
+      "review": "Orevuar!",
+      "speakerId": 11,
+      "bookId": 9,
+      "meetingId": 17,
+      "userId": 3,
+      "id": 22
     }
   ],
   "users": [
@@ -328,81 +402,18 @@
       "id": 5
     },
     {
-      "currentDate": "Mon Sep 06 2021 12:41:22 GMT+0500 (Екатеринбург, стандартное время)",
+      "currentDate": "Tue Sep 07 2021 12:36:50 GMT+0500 (Екатеринбург, стандартное время)",
       "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/book-create",
-      "message": "Cannot read property 't' of undefined",
+      "currentURL": "http://localhost:4200/meetings?page=2",
+      "message": "Assertion Failed: calling set on destroyed object: <book-club@component:report-form::ember889>.showError = false",
       "id": 6
     },
     {
-      "currentDate": "Mon Sep 06 2021 12:48:21 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/meeting-create",
-      "message": "[ember-cp-validations] Validator not found of type: undefined.",
+      "currentDate": "Tue Sep 07 2021 14:09:06 GMT+0500 (Екатеринбург, стандартное время)",
+      "ipAdress": "::ffff:127.0.0.1",
+      "currentURL": "http://localhost:4200/meetings?speaker=9",
+      "message": "The adapter operation was aborted",
       "id": 7
-    },
-    {
-      "currentDate": "Mon Sep 06 2021 12:49:09 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/meeting-create",
-      "message": "[ember-cp-validations] Validator not found of type: undefined.",
-      "id": 8
-    },
-    {
-      "currentDate": "Mon Sep 06 2021 12:49:24 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/meeting-create",
-      "message": "[ember-cp-validations] Validator not found of type: undefined.",
-      "id": 9
-    },
-    {
-      "currentDate": "Mon Sep 06 2021 12:50:24 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/meeting-create",
-      "message": "[ember-cp-validations] Validator not found of type: undefined.",
-      "id": 10
-    },
-    {
-      "currentDate": "Mon Sep 06 2021 12:51:49 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/meeting-create",
-      "message": "[ember-cp-validations] Validator not found of type: undefined.",
-      "id": 11
-    },
-    {
-      "currentDate": "Mon Sep 06 2021 12:53:34 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/meeting-create",
-      "message": "Assertion Failed: EmberObject.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().",
-      "id": 12
-    },
-    {
-      "currentDate": "Mon Sep 06 2021 13:11:17 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/book-create",
-      "message": "Failed to execute 'setAttribute' on 'Element': '20px' is not a valid attribute name.",
-      "id": 13
-    },
-    {
-      "currentDate": "Mon Sep 06 2021 13:51:59 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/book-edit/13",
-      "message": "editedBook.save is not a function",
-      "id": 14
-    },
-    {
-      "currentDate": "Mon Sep 06 2021 13:56:33 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/book-edit/13",
-      "message": "Cannot read property 'get' of undefined",
-      "id": 15
-    },
-    {
-      "currentDate": "Mon Sep 06 2021 14:33:33 GMT+0500 (Екатеринбург, стандартное время)",
-      "ipAdress": "::1",
-      "currentURL": "http://localhost:4200/book-edit/14",
-      "message": "bookWithoutCover.save is not a function",
-      "id": 16
     }
   ]
 }
